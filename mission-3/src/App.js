@@ -13,8 +13,9 @@ function App() {
   return (
     <div className="App">
       <div>
-        wasd
+       <h1>Team 4 Rocks!</h1>
       </div>
+      <div>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -27,6 +28,7 @@ function App() {
           <Route path="/teacherprojectlibrary" element={<TeacherProjectLibrary />} />
         </Routes>
       </BrowserRouter>
+      </div>
     </div>
   );
 }
