@@ -13,9 +13,6 @@ function App() {
   return (
     <div className="App">
       <div>
-       <h1>Team 4 Rocks!</h1>
-      </div>
-      <div>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />

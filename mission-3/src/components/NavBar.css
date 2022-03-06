@@ -1,0 +1,35 @@
+.header_button {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font: normal normal 900 16px Nunito;
+  letter-spacing: 0.32px;
+  color: #ffffff;
+}
+
+#header_left_button {
+  width: 200px;
+  height: 35px;
+  margin: 21px 27px 6px 0px;
+  border-radius: 7px;
+  box-shadow: 0px 4px 5px #00000029;
+  background: #e5ab2c 0% 0% no-repeat padding-box;
+}
+
+#header_mid_button {
+  width: 200px;
+  height: 35px;
+  margin: 21px 27px 6px 0px;
+  border-radius: 7px;
+  box-shadow: 0px 4px 5px #00000029;
+  background: #f91c85 0% 0% no-repeat padding-box;
+}
+
+#header_right_button {
+  width: 200px;
+  height: 35px;
+  margin: 21px 0px 6px 0px;
+  border-radius: 7px;
+  box-shadow: 0px 4px 5px #00000029;
+  background: #43c0f6 0% 0% no-repeat padding-box;
+}

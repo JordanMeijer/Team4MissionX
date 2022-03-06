@@ -5,7 +5,7 @@ export default function TeacherProjectBuilder() {
     <div>
       <Header />
       <div>
-          This is the Teacher Project Builder page
+          <h1>This is the Teacher Project Builder page</h1>
       </div>
     </div>
   )
