@@ -17,7 +17,7 @@ export default function TeacherDashboard() {
             </div>
             <div class='Dashboard'> 
                 <SideBar />
-                <BrowserRouter>
+                {/* <BrowserRouter>
                     <Routes>
                         <Route path="/teacherdashboard" element={<ProgressTracker />} />
                         <Route path="/teacherdashboard/progresstracker" element={<ProgressTracker />} />
@@ -25,7 +25,7 @@ export default function TeacherDashboard() {
                         <Route path="/teacherdashboard/helprequests" element={<HelpRequests />} />
                         <Route path="/teacherdashboard/projectsubmissions" element={<ProjectSubmissions />} />
                     </Routes>
-                </BrowserRouter>
+                </BrowserRouter> */}
             </div>
         </div>
     )
