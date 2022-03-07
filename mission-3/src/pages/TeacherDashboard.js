@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import '../App.css';
 import React from 'react';
-import Header from '../components/Header';
+import StudentTeacherHeader from '../components/StudentTeacherHeader';
 import SideBar from '../components/SideBar.js'
 import ProgressTracker from '../components/ProgressTracker.js'
 import StudentProfiles from '../components/StudentProfiles.js'
@@ -13,7 +13,7 @@ export default function TeacherDashboard() {
     return (
         <div>
             <div>
-                {/* <Header /> */}
+                <StudentTeacherHeader />
             </div>
             <div class='Dashboard'> 
                 <SideBar />

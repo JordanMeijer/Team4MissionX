@@ -6,7 +6,8 @@ function ProjectBar (props) {
   const listProjects = [];
 
   for (let i = 0; i < numberOfProjects; i++) {
-    listProjects[i] = <section key={i} className={projectToRender ? "project_circle_number" : "project_circle_no_number"}>{projectToRender}</section>
+    listProjects[i] = <section key={i} className={projectToRender ? "project_circle_number" : "project_circle_no_number"}>
+      <span className="number_style">{projectToRender}</span></section>;
   }
 
   return (

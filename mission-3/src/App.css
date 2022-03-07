@@ -1,12 +1,23 @@
-#brand {
+.star_logo_07_3 {
   align-items: center;
   margin-right: 20px;
+  width: 109px;
+  height: 45px;
+  margin: 0px 29px;
 }
 
-#project_intro {
-  text-align: center;
-  margin: 17px 0px 2px 0px;
-  font: normal normal 900 20px/11px Nunito;
-  letter-spacing: 0.4px;
+#project {
+  text-align: left;
+  margin: 13px 12px 0px 33px;
+  font: normal normal 900 15px/8px Nunito;
+  letter-spacing: 0.3px;
+  color: #6c6c6c;
+}
+
+#introduction {
+  text-align: left;
+  margin: 13px 12px 0px 33px;
+  font: normal normal 900 8px/8px Open Sans;
+  letter-spacing: 0.16px;
   color: #6c6c6c;
 }
