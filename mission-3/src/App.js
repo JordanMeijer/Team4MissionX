@@ -8,6 +8,9 @@ import StudentProjectLibrary from './pages/StudentsProjectLibrary'
 import TeacherDashboard from './pages/TeacherDashboard'
 import TeacherProjectBuilder from './pages/TeacherProjectBuilder'
 import TeacherProjectLibrary from './pages/TeacherProjectLibrary'
+import StudentProfiles from './pages/StudentProfiles.js'
+import HelpRequests from './pages/HelpRequest.js'
+import ProjectSubmissions from './pages/ProjectSubmissions.js'
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
           <Route path="/teacherdashboard" element={<TeacherDashboard />} />
           <Route path="/teacherprojectbuilder" element={<TeacherProjectBuilder />} />
           <Route path="/teacherprojectlibrary" element={<TeacherProjectLibrary />} />
+          <Route path="/teacherdashboard/studentprofiles" element={<StudentProfiles />} />
+          <Route path="/teacherdashboard/helprequests" element={<HelpRequests />} />
+          <Route path="/teacherdashboard/projectsubmissions" element={<ProjectSubmissions />} />
         </Routes>
       </BrowserRouter>
       </div>

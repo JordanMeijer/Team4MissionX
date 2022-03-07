@@ -1,13 +1,9 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import '../App.css';
+import './TeacherDashboard.css';
 import React from 'react';
 import StudentTeacherHeader from '../components/StudentTeacherHeader';
 import SideBar from '../components/SideBar.js'
 import ProgressTracker from '../components/ProgressTracker.js'
-import StudentProfiles from '../components/StudentProfiles.js'
-import HelpRequests from '../components/HelpRequest.js'
-import ProjectSubmissions from '../components/ProjectSubmissions.js'
-import { Link } from 'react-router-dom';
+
 
 export default function TeacherDashboard() {
     return (
@@ -16,16 +12,8 @@ export default function TeacherDashboard() {
                 <StudentTeacherHeader />
             </div>
             <div class='Dashboard'> 
-                <SideBar />
-                {/* <BrowserRouter>
-                    <Routes>
-                        <Route path="/teacherdashboard" element={<ProgressTracker />} />
-                        <Route path="/teacherdashboard/progresstracker" element={<ProgressTracker />} />
-                        <Route path="/teacherdashboard/studentprofiles" element={<StudentProfiles />} />
-                        <Route path="/teacherdashboard/helprequests" element={<HelpRequests />} />
-                        <Route path="/teacherdashboard/projectsubmissions" element={<ProjectSubmissions />} />
-                    </Routes>
-                </BrowserRouter> */}
+                <SideBar /> 
+                <ProgressTracker />
             </div>
         </div>
     )
