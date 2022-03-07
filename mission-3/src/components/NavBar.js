@@ -1,17 +1,18 @@
-import '../App.css'
+import '../App.css';
+import './NavBar.css';
 
 function NavBar () {
   return (
     <div className="header_button">
-      <li id="header_left_button">
+      <div id="header_left_button">
         Take Screenshot
-      </li>
-      <li id="header_mid_button">
+      </div>
+      <div id="header_mid_button">
         Help Centre
-      </li>
-      <li id="header_right_button">
+      </div>
+      <div id="header_right_button">
         More Projects
-      </li>
+      </div>
     </div>
   );
 }
