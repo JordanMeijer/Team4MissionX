@@ -8,9 +8,9 @@ import StudentProjectLibrary from './pages/StudentsProjectLibrary'
 import TeacherDashboard from './pages/TeacherDashboard'
 import TeacherProjectBuilder from './pages/TeacherProjectBuilder'
 import TeacherProjectLibrary from './pages/TeacherProjectLibrary'
-import StudentProfiles from './pages/StudentProfiles.js'
-import HelpRequests from './pages/HelpRequest.js'
-import ProjectSubmissions from './pages/ProjectSubmissions.js'
+import StudentProfiles from './pages/TeacherDashboardStudentProfiles.js'
+import HelpRequests from './pages/TeacherDashboardHelpRequest.js'
+import ProjectSubmissions from './pages/TeacherDashboardProjectSubmissions.js'
 
 function App() {
   return (
