@@ -1,8 +1,8 @@
 import React from "react";
-import StudentLoginImage from "Team4MissionXmission-3srcimagesHomeStudents@2x.png";
-import TeacherLoginImage from "Team4MissionXmission-3srcimagesHome\teacher@2x.png";
+import StudentLoginImage from "../images/Home/Students@2x.png";
+import TeacherLoginImage from "../images/Home/teacher@2x.png";
 
-export default function LogInSignUp() {
+function LoginSignUp() {
   return (
     <div className="loginbox">
       <div>
@@ -24,3 +24,5 @@ export default function LogInSignUp() {
     </div>
   );
 }
+
+export default LoginSignUp;
