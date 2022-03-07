@@ -1,4 +1,4 @@
-import Header from '../components/Header';
+import Header from "../components/Header";
 
 export default function TeacherProjectBuilder() {
   return (
@@ -6,7 +6,7 @@ export default function TeacherProjectBuilder() {
       <Header />
       <div>
           <h1>This is the Teacher Project Builder page</h1>
-      </div>
+      </div> main
     </div>
-  )
+  );
 }
