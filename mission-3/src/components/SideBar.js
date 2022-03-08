@@ -13,29 +13,29 @@ import ProjectLibraryIconLight from '../images/Teacher Areas/library light.png'
 
 export default function SideBar() {
     return (        
-        <div class='SideBar'>
+        <div className='SideBar'>
             This is the SideBar
-            <div class='ProfilePicture'>
-                <img src={ProfilePicture} />
+            <div className='ProfilePicture'>
+                <img src={ProfilePicture} alt="profile_picture"/>
             </div>
-            <div class='DashboardButtons'>
+            <div className='DashboardButtons'>
                 <DashboardButtonExpanded buttonText='Progress Tracker' image={ProgressTrackerIconLight} />
                 <DashboardButtonExpanded buttonText='Student Profiles'image={StudentProfileIconLight}/>
                 <DashboardButtonExpanded buttonText='Help Request'image={HelpRequestIconLight}/ >
                 <DashboardButtonExpanded buttonText='Project Submissions'image={ProjectSubmissionsIconLight}/>
                 <DashboardButtonExpanded buttonText='Project Library'image={ProjectLibraryIconLight}/>
             </div>
-            <div class='AccountButtons'>
-                <div class='AccountButtonText'>
-                    <img src={UserCircle} />
+            <div className='AccountButtons'>
+                <div className='AccountButtonText'>
+                    <img src={UserCircle} alt="user_circle_profile"/>
                     <p>Profile</p>
                 </div>
-                <div class='AccountButtonText'>
-                    <img src={Settings} />
+                <div className='AccountButtonText'>
+                    <img src={Settings} alt="settings_icon"/>
                     <p>Settings</p>
                 </div>
-                <div class='AccountButtonText'>
-                    <img src={LogOut} />
+                <div className='AccountButtonText'>
+                    <img src={LogOut} alt="logout_icon"/>
                     <p>Log out</p>
                 </div>
             </div>
