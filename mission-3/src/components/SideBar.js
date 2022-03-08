@@ -16,7 +16,7 @@ export default function SideBar() {
         <div className='SideBar'>
             This is the SideBar
             <div className='ProfilePicture'>
-                <img src={ProfilePicture} />
+                <img src={ProfilePicture} alt="profile_picture"/>
             </div>
             <div className='DashboardButtons'>
                 <DashboardButtonExpanded buttonText='Progress Tracker' image={ProgressTrackerIconLight} />
@@ -27,15 +27,15 @@ export default function SideBar() {
             </div>
             <div className='AccountButtons'>
                 <div className='AccountButtonText'>
-                    <img src={UserCircle} />
+                    <img src={UserCircle} alt="user_circle_profile"/>
                     <p>Profile</p>
                 </div>
                 <div className='AccountButtonText'>
-                    <img src={Settings} />
+                    <img src={Settings} alt="settings_icon"/>
                     <p>Settings</p>
                 </div>
                 <div className='AccountButtonText'>
-                    <img src={LogOut} />
+                    <img src={LogOut} alt="logout_icon"/>
                     <p>Log out</p>
                 </div>
             </div>

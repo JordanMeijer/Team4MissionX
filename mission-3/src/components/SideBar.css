@@ -1,31 +1,30 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
 
 .SideBar {
-    display: flex;
-    flex-direction: column;
-    background-color:rgb(67, 192, 246);
-    width: 236px;
-    height: 80vh;
-   position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(67, 192, 246);
+  width: 236px;
+  height: 80vh;
+  position: relative;
 }
 
 .SideBar > * {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .AccountButtons {
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    left: 25%;
-    right:auto;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  right: auto;
 }
 
 .AccountButtons > img {
-    margin: 10px;
-    height: 12px;
+  margin: 10px;
+  height: 12px;
 }
 
 .AccountButtonText {
@@ -38,5 +37,5 @@
 }
 
 .ProfilePicture {
-    margin-bottom: 17px; 
+  margin-bottom: 17px;
 }

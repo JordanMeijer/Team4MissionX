@@ -5,19 +5,3 @@
   height: 45px;
   margin: 0px 29px;
 }
-
-#project {
-  text-align: left;
-  margin: 13px 12px 0px 33px;
-  font: normal normal 900 15px/8px Nunito;
-  letter-spacing: 0.3px;
-  color: #6c6c6c;
-}
-
-#introduction {
-  text-align: left;
-  margin: 13px 12px 0px 33px;
-  font: normal normal 900 8px/8px Open Sans;
-  letter-spacing: 0.16px;
-  color: #6c6c6c;
-}
