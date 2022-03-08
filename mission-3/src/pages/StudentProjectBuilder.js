@@ -1,7 +1,9 @@
+import StudentTeacherHeader from "../components/StudentTeacherHeader";
+
 export default function StudentProjectBuilder() {
-    return (
-        <div>
-            This is the Student project Builder page
-        </div>
+  return (
+    <>
+      <StudentTeacherHeader render_project_bar={true} text_middle="Ask Teacher for Help"/>
+    </>
     )
 }

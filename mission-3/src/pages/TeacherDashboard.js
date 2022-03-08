@@ -10,23 +10,24 @@ import ProjectSubmissions from '../components/ProjectSubmissions.js'
 import { Link } from 'react-router-dom';
 
 export default function TeacherDashboard() {
-    return (
-        <div>
-            <div>
-                <StudentTeacherHeader />
-            </div>
-            <div class='Dashboard'> 
-                <SideBar />
-                {/* <BrowserRouter>
-                    <Routes>
-                        <Route path="/teacherdashboard" element={<ProgressTracker />} />
-                        <Route path="/teacherdashboard/progresstracker" element={<ProgressTracker />} />
-                        <Route path="/teacherdashboard/studentprofiles" element={<StudentProfiles />} />
-                        <Route path="/teacherdashboard/helprequests" element={<HelpRequests />} />
-                        <Route path="/teacherdashboard/projectsubmissions" element={<ProjectSubmissions />} />
-                    </Routes>
-                </BrowserRouter> */}
-            </div>
-        </div>
-    )
+  return (
+    <div>
+      <div>
+        <StudentTeacherHeader render_project_bar={false} text_middle=""/>
+      </div>
+      <div className='Dashboard'> 
+        <SideBar />
+        {/* <BrowserRouter>
+            <Routes>
+              <Route path="/teacherdashboard" element={<ProgressTracker />} />
+              <Route path="/teacherdashboard/progresstracker" element={<ProgressTracker />} />
+              <Route path="/teacherdashboard/studentprofiles" element={<StudentProfiles />} />
+              <Route path="/teacherdashboard/helprequests" element={<HelpRequests />} />
+              <Route path="/teacherdashboard/projectsubmissions" element={<ProjectSubmissions />} />
+            </Routes>
+          </BrowserRouter> */
+        }
+      </div>
+    </div>
+  )
 }
