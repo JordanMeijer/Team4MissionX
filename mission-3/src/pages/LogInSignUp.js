@@ -2,7 +2,7 @@ import React from "react";
 import StudentLoginImage from "../images/Home/Students@2x.png";
 import TeacherLoginImage from "../images/Home/teacher@2x.png";
 
-function LognSignUp() {
+function LoginSignUp() {
   return <RegistrationForm />;
 }
 
