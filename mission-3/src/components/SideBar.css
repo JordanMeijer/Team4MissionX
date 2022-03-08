@@ -28,12 +28,12 @@
 }
 
 .AccountButtonText {
-  margin: 7px;
-  text-align: center;
-  font-size: 10px;
-  font: bold;
-  color: white;
-  font-family: "Open sans", serif;
+    margin: 7px;
+    text-align: center;
+    font-size: 10px;
+    font: bold;
+    color: white;
+    font-family: "Open Sans", serif;
 }
 
 .ProfilePicture {
