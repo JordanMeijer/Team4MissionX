@@ -14,7 +14,6 @@ import ProjectLibraryIconLight from '../images/Teacher Areas/library light.png'
 export default function SideBar() {
     return (        
         <div className='SideBar'>
-            This is the SideBar
             <div className='ProfilePicture'>
                 <img src={ProfilePicture} alt="profile_picture"/>
             </div>
