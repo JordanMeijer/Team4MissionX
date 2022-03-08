@@ -1,7 +1,9 @@
+import StudentTeacherHeader from "../components/StudentTeacherHeader";
+
 export default function TeacherProjectLibrary() {
-    return (
-        <div>
-            This is the Teacher Project Library page
-        </div>
-    )
-}
+  return (
+    <>
+      <StudentTeacherHeader render_project_bar={false} text_middle="Help Centre"/>
+    </>
+  );
+};

@@ -6,15 +6,15 @@ import ProgressTracker from '../components/ProgressTracker.js'
 
 
 export default function TeacherDashboard() {
-    return (
-        <div>
-            <div>
-                <StudentTeacherHeader />
-            </div>
-            <div class='Dashboard'> 
-                <SideBar /> 
-                <ProgressTracker />
-            </div>
-        </div>
-    )
-}
+  return (
+    <div>
+      <div>
+        <StudentTeacherHeader render_project_bar={false} text_middle="Help Centre"/>
+      </div>
+      <div className='Dashboard'> 
+        <SideBar /> 
+        <ProgressTracker />
+      </div>
+    </div>
+  );
+};
