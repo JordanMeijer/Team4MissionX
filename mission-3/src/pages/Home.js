@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import HomeHeader from "../components/HomeHeader";
 
 function Home() {
-  const [backgroundColor, setBackgroundColor] = useState("#FFFFFF");
 
   return (
-    <div style={{background: backgroundColor}}>
-
+    <>
+      <HomeHeader />
       <div><h2>This is the Home page</h2></div>
       <div>
         <Link to="/loginsignup">Log In / Sign Up</Link>
@@ -15,7 +14,7 @@ function Home() {
         <Link to="/profile">Profile</Link>
       </div>
       <div>
-        <Link to="/studentprojectbuilder" onClick={() => setBackgroundColor("#B2E4FA")}>Student Project Builder</Link>
+        <Link to="/studentprojectbuilder">Student Project Builder</Link>
       </div>
       <div>
         <Link to="/studentprojectlibrary">Student Project Library</Link>
@@ -29,7 +28,7 @@ function Home() {
       <div>
         <Link to="/teacherprojectlibrary">Teacher Project Library</Link>
       </div>
-    </div>
+    </>
   );
 }
 
