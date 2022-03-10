@@ -2,6 +2,7 @@ import "./TeacherDashboard.css";
 
 import SideBar from "../components/SideBar";
 import StudentTeacherHeader from "../components/StudentTeacherHeader";
+import StudentProjectBuilder1 from "../components/StudentProjectBuilder1";
 
 export default function StudentProjectBuilder() {
   return (
