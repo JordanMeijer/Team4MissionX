@@ -11,20 +11,22 @@ import StarLogo07_3 from '../images/Home/Star Logo 07-3.png';
 
 function StudentTeacherHeader (props) {
   return (
-    <div className="student_teacher_header">
-      <section>
-        <img src={StarLogo07_3} className="star_logo_07_3" alt="project" />
-      </section>
-      <section>
-        <ProjectBar render_bar={props.render_project_bar} circles={15} number_to_render={1}/>
-      </section>
-      <section>
-        <StudentTeacherNavBar text_navbar_left="Take Screenshot" text_navbar_mid={props.text_middle} text_navbar_right="More Projects"/>
-      </section>
-      <section>
-        <Languages />
-      </section>
-    </div>
+    <>
+      <header className="student_teacher_header">
+        <section>
+          <img src={StarLogo07_3} className="star_logo_07_3" alt="project" />
+        </section>
+        <section>
+          <ProjectBar render_bar={props.render_project_bar} circles={15} number_to_render={1}/>
+        </section>
+        <section>
+          <StudentTeacherNavBar text_navbar_left="Take Screenshot" text_navbar_mid={props.text_middle} text_navbar_right="More Projects"/>
+        </section>
+        <section>
+          <Languages />
+        </section>
+      </header>
+    </>
   );
 };
 
