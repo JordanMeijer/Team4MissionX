@@ -11,7 +11,7 @@ export default function TeacherDashboardProjectSubmissions() {
             <StudentTeacherHeader />
         </div>
         <div className='Dashboard'> 
-            <SideBar /> 
+            <SideBar page="/teacherdashboard/projectsubmissions"/> 
             <div className='ProjectSubmissions'>
                 </div>
         </div>
