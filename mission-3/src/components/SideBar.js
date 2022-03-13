@@ -12,33 +12,32 @@ import ProjectLibraryIconLight from '../images/Teacher Areas/library light.png'
 // import ProgressTrackerIconDark from '../images/Teacher Areas/Progress Dark.png'
 
 export default function SideBar() {
-    return (        
-        <div className='SideBar'>
-            This is the SideBar
-            <div className='ProfilePicture'>
-                <img src={ProfilePicture} alt="profile_picture"/>
-            </div>
-            <div className='DashboardButtons'>
-                <DashboardButtonExpanded buttonText='Progress Tracker' image={ProgressTrackerIconLight} />
-                <DashboardButtonExpanded buttonText='Student Profiles'image={StudentProfileIconLight}/>
-                <DashboardButtonExpanded buttonText='Help Request'image={HelpRequestIconLight}/ >
-                <DashboardButtonExpanded buttonText='Project Submissions'image={ProjectSubmissionsIconLight}/>
-                <DashboardButtonExpanded buttonText='Project Library'image={ProjectLibraryIconLight}/>
-            </div>
-            <div className='AccountButtons'>
-                <div className='AccountButtonText'>
-                    <img src={UserCircle} alt="user_circle_profile"/>
-                    <p>Profile</p>
-                </div>
-                <div className='AccountButtonText'>
-                    <img src={Settings} alt="settings_icon"/>
-                    <p>Settings</p>
-                </div>
-                <div className='AccountButtonText'>
-                    <img src={LogOut} alt="logout_icon"/>
-                    <p>Log out</p>
-                </div>
-            </div>
+  return (        
+    <div className='SideBar'>
+      <div className='ProfilePicture'>
+        <img src={ProfilePicture} alt="profile_picture"/>
+      </div>
+      <div className='DashboardButtons'>
+        <DashboardButtonExpanded buttonText='Progress Tracker' image={ProgressTrackerIconLight} />
+        <DashboardButtonExpanded buttonText='Student Profiles'image={StudentProfileIconLight}/>
+        <DashboardButtonExpanded buttonText='Help Request'image={HelpRequestIconLight}/ >
+        <DashboardButtonExpanded buttonText='Project Submissions'image={ProjectSubmissionsIconLight}/>
+        <DashboardButtonExpanded buttonText='Project Library'image={ProjectLibraryIconLight}/>
+      </div>
+      <div className='AccountButtons'>
+        <div className='AccountButtonText'>
+          <img src={UserCircle} alt="user_circle_profile"/>
+          <p>Profile</p>
         </div>
-    )
-}
+        <div className='AccountButtonText'>
+          <img src={Settings} alt="settings_icon"/>
+          <p>Settings</p>
+        </div>
+        <div className='AccountButtonText'>
+          <img src={LogOut} alt="logout_icon"/>
+          <p>Log out</p>
+        </div>
+      </div>
+    </div>
+  );
+};
