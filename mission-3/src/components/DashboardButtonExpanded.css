@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
 
-.DashboardButton {
+.DashboardButtonLight, .DashboardButtonDark {
   display: flex;
   flex-direction: row;
+  padding-left: 15px;
+  
+}
+
+.DashboardButtonDark {
+  background-color: #b2e4fa;
 }
 
 .DashboardButtonIcon {
@@ -11,6 +17,7 @@
   margin-top: auto;
   margin-bottom: auto;
   padding-right: 10px;
+  
 }
 
 h3 {
@@ -19,4 +26,9 @@ h3 {
   font: bold;
   color: white;
   font-family: "Open sans", serif;
+  text-decoration: none;
+}
+
+.DashboardButtonDark>h3 {
+  color: rgb(70, 70, 70);
 }

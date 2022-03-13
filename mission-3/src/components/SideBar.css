@@ -14,12 +14,17 @@
   margin-right: auto;
 }
 
+.DashboardButtons{
+ 
+  width: 100%;
+}
+
 .AccountButtons {
   display: flex;
-  position: absolute;
-  bottom: 0;
-  left: 25%;
-  right: auto;
+  flex-direction: row;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .AccountButtons > img {
@@ -37,5 +42,6 @@
 }
 
 .ProfilePicture {
-  margin-bottom: 17px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

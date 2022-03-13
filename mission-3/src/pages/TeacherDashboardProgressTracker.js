@@ -13,7 +13,7 @@ export default function TeacherDashboard() {
         <StudentTeacherHeader render_project_bar={false} text_middle="Help Centre"/>
       </div>
       <div className='Dashboard'> 
-        <SideBar /> 
+        <SideBar page="/teacherdashboard/progresstracker" /> 
           <div className='DashboardContentsParentContainer'>
             <div className='DashboardContentsChildContainer'>
               <h1 className='BeginnerCourseText'>Beginner Course</h1>
