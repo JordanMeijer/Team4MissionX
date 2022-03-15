@@ -17,11 +17,11 @@ function LoginTextInputs() {
           <button className="btn">Sign Up</button>
         </div>
         <div>
-          <input type="submit">LOG IN</input>
+          <input type="submit" name="LOG IN" />
         </div>
         <form>
-          <input type="text">Email Address</input>
-          <input type="text">Password</input>
+          <input type="text" name="Email Address" />
+          <input type="text" name="Password" />
         </form>
       </div>
       <div className="teacher_slide">
@@ -36,11 +36,11 @@ function LoginTextInputs() {
           <button className="btn">Sign Up</button>
         </div>
         <form>
-          <input type="text">Email Address</input>
-          <input type="text">Password</input>
+          <input type="text" name="Email Address" />
+          <input type="text" name="Password" />
         </form>
         <div>
-          <input type="submit">LOG IN</input>
+          <input type="submit" name="LOG IN" />
         </div>
       </div>
     </div>
