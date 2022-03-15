@@ -17,13 +17,13 @@ function SignUpTextInputs() {
           <button className="btn">Sign Up</button>
         </div>
         <form>
-          <input type="text">Full Name</input>
-          <input type="text">Email Address</input>
-          <input type="text">Password</input>
-          <input type="text"> Confirm Password</input>
+          <input type="text" name="Full Name" />
+          <input type="text" name="Email Address" />
+          <input type="text" name="Password" />
+          <input type="text" name="Confirm Password" />
         </form>
         <div>
-          <input type="submit">SIGN UP</input>
+          <input type="submit" name="SIGN UP" />
         </div>
       </div>
       <div className="teacher_slide">
@@ -38,13 +38,13 @@ function SignUpTextInputs() {
           <button className="btn">Sign Up</button>
         </div>
         <form>
-          <input type="text">Full Name</input>
-          <input type="text">Email Address</input>
-          <input type="text">Password</input>
-          <input type="text"> Confirm Password</input>
+          <input type="text" name="Full Name" />
+          <input type="text" name="Email Address" />
+          <input type="text" name="Password" />
+          <input type="text" name="Confirm Password" />
         </form>
         <div>
-          <input type="submit">SIGN UP</input>
+          <input type="submit" name="SIGN UP" />
         </div>
       </div>
     </div>
