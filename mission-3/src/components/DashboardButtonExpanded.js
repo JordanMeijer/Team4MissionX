@@ -1,10 +1,12 @@
 import './DashboardButtonExpanded.css'
 
 export default function DashboardButtonExpanded(props) {
-    return (
-        <div class='DashboardButton'>
-            <img  src={props.image} class='DashboardButtonIcon'/>
-            <h3>{props.buttonText}</h3>
-        </div>
-    )
-}
+  return (
+    <a href={props.link}>
+      <div className={props.className}>
+        <img  src={props.image} className='DashboardButtonIcon' alt="dashboard_icon"/>
+        <h3>{props.buttonText}</h3>
+      </div>
+    </a>
+  );
+};

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
 .header_button {
   display: flex;
   flex-direction: row;
@@ -13,16 +15,16 @@
   margin: 9px 27px 3px 99.4px;
   border-radius: 7px;
   box-shadow: 0px 4px 5px #00000029;
-  background: #e5ab2c 0% 0% no-repeat padding-box;
+  background: #e5ab2c;
 }
 
 #header_mid_button {
-  width: 200px;
+  width: 250px;
   height: 35px;
   margin: 9px 27px 3px 0px;
   border-radius: 7px;
   box-shadow: 0px 4px 5px #00000029;
-  background: #f91c85 0% 0% no-repeat padding-box;
+  background: #f91c85;
 }
 
 #header_right_button {
@@ -31,11 +33,11 @@
   margin: 9px 27px 3px 0px;
   border-radius: 7px;
   box-shadow: 0px 4px 5px #00000029;
-  background: #43c0f6 0% 0% no-repeat padding-box;
+  background: #43c0f6;
 }
 
 .button_content {
   display: flex;
   text-align: center;
-  margin: 8px 40px;
+  margin: 2% 10%;
 }

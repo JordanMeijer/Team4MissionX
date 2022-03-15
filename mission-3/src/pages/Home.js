@@ -1,8 +1,12 @@
 import { Link } from 'react-router-dom';
+import HomeHeader from "../components/HomeHeader";
+import HomeFooter from '../components/HomeFooter';
 
 function Home() {
+
   return (
-    <div>
+    <>
+      <HomeHeader />
       <div><h2>This is the Home page</h2></div>
       <div>
         <Link to="/loginsignup">Log In / Sign Up</Link>
@@ -25,7 +29,8 @@ function Home() {
       <div>
         <Link to="/teacherprojectlibrary">Teacher Project Library</Link>
       </div>
-    </div>
+      <HomeFooter />
+    </>
   );
 }
 

@@ -1,0 +1,57 @@
+.StudentProgressCardContainerParent {
+    background-color: white;
+    width: 80%;
+    height: 113px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.StudentProgressCardContainerChild {
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.NameAndProjectsCompletedContainer {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+
+
+.StudentNameText{
+    font-size: 14px;
+}
+
+.ProjectsCompleted {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.ProjectsCompletionProgress {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin: auto;
+}
+
+.ProjectEllipse {
+    border: 4px solid pink;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+}
+
+.ProjectEllipseCompleted {
+    border: 4px solid pink;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-color: rgb(165, 235, 206);
+    text-align: center;
+}
