@@ -16,13 +16,13 @@ function LoginTextInputs() {
           <button className="btn">Log In</button>
           <button className="btn">Sign Up</button>
         </div>
-        <div>
-          <input type="submit" name="LOG IN" />
-        </div>
         <form>
-          <input type="text" name="Email Address" />
-          <input type="text" name="Password" />
+          <input type="text">Email Address</input>
+          <input type="text">Password</input>
         </form>
+        <div>
+          <input type="submit">LOG IN</input>
+        </div>
       </div>
       <div className="teacher_slide">
         <div className="teacher_image">
@@ -36,11 +36,11 @@ function LoginTextInputs() {
           <button className="btn">Sign Up</button>
         </div>
         <form>
-          <input type="text" name="Email Address" />
-          <input type="text" name="Password" />
+          <input type="text">Email Address</input>
+          <input type="text">Password</input>
         </form>
         <div>
-          <input type="submit" name="LOG IN" />
+          <input type="submit">LOG IN</input>
         </div>
       </div>
     </div>
