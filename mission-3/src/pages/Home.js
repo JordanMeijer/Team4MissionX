@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import HomeHeader from "../components/HomeHeader";
+import HomeFooter from '../components/HomeFooter';
 
 function Home() {
 
@@ -28,6 +29,7 @@ function Home() {
       <div>
         <Link to="/teacherprojectlibrary">Teacher Project Library</Link>
       </div>
+      <HomeFooter />
     </>
   );
 }
