@@ -16,14 +16,14 @@ function HomeHeader () {
           <div className="header_navbar_content">FEATURES</div>
           <div className="header_navbar_content">TEACHERS</div>
         </section>
-        <div className="register_login_flags_parent_container">
+        <div className="header_register_login_flags_parent_container">
           <section className="header_flags_child_container">
             <div className="header_lang_content">LANG</div>
             <Languages className="header_flags" />
           </section>
           <section>
             <img className="header_user_circle" src={IconUserCircle} alt ="icon_awesome_user_circle" />
-            <div className="register_login_element">REGISTER | LOGIN</div>
+            <div className="header_register_login_element">REGISTER | LOGIN</div>
           </section>
           
         </div>

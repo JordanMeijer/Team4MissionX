@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import HomeHeader from "../components/HomeHeader";
+import HomeHero from '../components/HomeHero';
 import HomeFooter from '../components/HomeFooter';
 
 function Home() {
@@ -7,7 +8,7 @@ function Home() {
   return (
     <>
       <HomeHeader />
-      <div><h2>This is the Home page</h2></div>
+      <HomeHero />
       <div>
         <Link to="/loginsignup">Log In / Sign Up</Link>
       </div>

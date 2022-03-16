@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,700;1,800;1,900&family=Open+Sans:wght@700&display=swap");
+
+.homehero_wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.homehero_image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.homehero_h1 {
+  position: absolute;
+  text-align: left;
+  width: 35%;
+  margin: 51px 266px;
+  font: normal normal bold 60px/58px Nunito;
+  letter-spacing: 0px;
+  color: #767676;
+}
+
+.homehero_h3 {
+  position: absolute;
+  text-align: left;
+  margin: 202px 266px;
+  width: 29%;
+  font: normal normal bold 24px/28px Open Sans;
+  letter-spacing: 0px;
+  color: #6c6c6c;
+}
+
+.homehero_future {
+  color: #42c0f6;
+}
+
+.homehero_learn_button {
+  position: absolute;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 5px #00000029;
+  border: 3px solid #43c0f6;
+  width: 10%;
+  margin-top: 317px;
+  margin-left: 397px;
+  border-radius: 7px;
+  text-align: center;
+  font: normal normal 900 16px/22px Nunito;
+  letter-spacing: 0.32px;
+  color: #707070;
+}
+
+.homehero_signup_button {
+  position: absolute;
+  background: #f91c85;
+  box-shadow: 0px 4px 5px #00000029;
+  border-radius: 7px;
+  margin-top: 317px;
+  margin-left: 645px;
+  width: 10%;
+  text-align: center;
+  font: normal normal 900 16px/22px Nunito;
+  letter-spacing: 0.32px;
+  color: #f0efef;
+}
+
+.homeheader_p {
+  position: absolute;
+  text-align: center;
+  margin-top: 347px;
+  margin-left: 645px;
+  width: 10%;
+  font: normal normal normal 11px/13px Open Sans;
+  letter-spacing: 0.22px;
+  color: #707070;
+}
