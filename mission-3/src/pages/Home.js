@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
 import HomeHeader from "../components/HomeHeader";
-import HomeFooter from "../components/HomeFooter";
+import HomeHero from '../components/HomeHero';
+import HomeFooter from '../components/HomeFooter';
+
 
 function Home() {
   return (
     <>
       <HomeHeader />
+      <HomeHero />
+
       <div>
         <h2>This is the Home page</h2>
       </div>

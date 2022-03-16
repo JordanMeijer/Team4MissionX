@@ -12,8 +12,12 @@ export default function TeacherDashboardStudentProfiles() {
         </div>
         <div className='Dashboard'> 
             <SideBar page="/teacherdashboard/studentprofiles"/> 
-            <div className="StudentProfiles">
+            <div className='DashboardContentsParentContainer'>
+                <div className='DashboardContentsChildContainer'>
+             
+              
                 </div>
+            </div>
         </div>
     </div>
 )}
