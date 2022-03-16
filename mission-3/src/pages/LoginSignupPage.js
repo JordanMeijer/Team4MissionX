@@ -1,12 +1,12 @@
 import React from "react";
 import LoginTextInputs from "../components/LoginTextInputs";
 
-function LoginSignUp() {
+function LoginSignupPage() {
   return (
-    <div className="login_signup_box">
+    <>
       <LoginTextInputs />
-    </div>
+    </>
   );
 }
 
-export default LoginSignUp;
+export default LoginSignupPage;
