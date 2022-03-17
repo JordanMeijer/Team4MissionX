@@ -8,15 +8,15 @@ function ProjectBar (props) {
   if (props.render_bar) {
     for (let i = 0; i < numberOfProjects; i++) {
       if ((i+1) === projectToRender) {
-        listProjects[i] = <section key={i} className="project_circle_number">
-          <span className="number_style">{projectToRender}</span></section>;
+        listProjects[i] = <section key={i} className="projectbar_circle_number">
+          <span className="projectbar_number_style">{projectToRender}</span></section>;
       } 
       else {
-        listProjects[i] = <section key={i} className="project_circle_no_number"></section>;
+        listProjects[i] = <section key={i} className="projectbar_circle_no_number"></section>;
       }
     }
 
-    listProjects.unshift(<section key={"text"}><div id="project">PROJECT</div><div id="introduction">Introduction</div>
+    listProjects.unshift(<section key={"text"}><div id="projectbar_title">PROJECT</div><div id="projectbar_introduction">Introduction</div>
       </section>);
   }
 
