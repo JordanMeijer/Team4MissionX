@@ -25,3 +25,10 @@
   color: rgb(70, 70, 70);
   font: bold;
 }
+
+.StudentProfilesGrid {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  height: 90%;
+  width: 90%;
+}
