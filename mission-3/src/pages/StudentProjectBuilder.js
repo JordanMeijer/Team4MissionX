@@ -9,7 +9,7 @@ export default function StudentProjectBuilder() {
     <>
       <StudentTeacherHeader render_project_bar={true} text_middle="Ask Teacher for Help"/>
       <div className='Dashboard'> 
-        <SideBar /> 
+        <SideBar page="/studentprojectbuilder"/> 
         <div className='DashboardContentsParentContainer'>
           <div className='DashboardContentsChildContainer'>
             <h1 className='BeginnerCourseText'>Explore Scratch Blocks</h1>

@@ -11,7 +11,7 @@ export default function TeacherDashboardHelpRequests() {
             <StudentTeacherHeader />
         </div>
         <div className='Dashboard'> 
-            <SideBar page="/teacherdashboard/helprequests"/> 
+            <SideBar page="/teacherdashboard/helprequests" TeacherVersion={true}/> 
             <div className="HelpRequest">
             </div>
         </div>
