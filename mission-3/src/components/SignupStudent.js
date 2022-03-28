@@ -4,7 +4,7 @@ import "../components/LoginPage.css";
 function SignupStudent() {
   return (
     <div>
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <input
           type="text"
           name="FUll Name"

@@ -3,7 +3,7 @@ import React from "react";
 function LoginTeacher() {
   return (
     <div>
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <input
           type="text"
           name="Email Address"
