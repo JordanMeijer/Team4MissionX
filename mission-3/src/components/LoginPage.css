@@ -11,16 +11,15 @@
 }
 
 .student_image {
-  margin-left: 20%;
-  margin-top: 15%;
+  margin-right: 30%;
 }
 
 .teacher_image {
-  margin-left: 20%;
+  margin-left: 50%;
   margin-top: 15%;
 }
 
-.inputs {
+.login_inputs {
   flex-direction: column;
   width: 250px;
   height: 33px;
