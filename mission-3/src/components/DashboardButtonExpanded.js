@@ -5,7 +5,7 @@ export default function DashboardButtonExpanded(props) {
     <a href={props.link}>
       <div className={props.className}>
         <img  src={props.image} className='DashboardButtonIcon' alt="dashboard_icon"/>
-        <h3>{props.buttonText}</h3>
+        <h3 className='DashboardButtonText'>{props.buttonText}</h3>
       </div>
     </a>
   );
