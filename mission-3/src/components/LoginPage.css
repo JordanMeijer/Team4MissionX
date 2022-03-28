@@ -12,14 +12,25 @@
 
 .student_image {
   margin-top: 15%;
+  margin-left: 20%;
 }
 
 .teacher_image {
-  margin-left: 50%;
   margin-top: 15%;
+  margin-left: 20%;
 }
 
 .login_inputs {
+  flex-direction: column;
+  width: 250px;
+  height: 33px;
+  margin: 15px;
+  margin-left: 25%;
+  border-radius: 10px;
+  opacity: 50%;
+}
+
+.signup_inputs {
   flex-direction: column;
   width: 250px;
   height: 33px;
