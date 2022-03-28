@@ -4,7 +4,7 @@ import "../components/LoginPage.css";
 function SignupTeacher() {
   return (
     <div>
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <input
           type="text"
           name="FUll Name"
@@ -29,12 +29,12 @@ function SignupTeacher() {
           placeholder="Confirm Password"
           className="Signup_inputs"
         />
+        <div>
+          <button type="submit" className="submit_btn">
+            SIGN UP
+          </button>
+        </div>
       </form>
-      <div>
-        <button input type="submit" name="LOG IN" className="login_btn">
-          SIGN UP
-        </button>
-      </div>
     </div>
   );
 }

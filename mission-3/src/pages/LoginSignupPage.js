@@ -20,8 +20,10 @@ function LoginSignupPage() {
           <h1 className="student_title">Students</h1>
         </div>
         <div>
-          <button className="login_button">LOG IN</button>
-          <button className="signup_button" onClick={() => setToggle(true)}>
+          <button className="login_button" onClick={() => setToggle(true)}>
+            LOG IN
+          </button>
+          <button className="signup_button" onClick={() => setToggle(false)}>
             SIGN UP
           </button>
         </div>
@@ -43,8 +45,12 @@ function LoginSignupPage() {
           <h1 className="teacher_title">Teachers</h1>
         </div>
         <div>
-          <button className="login_button">LOG IN</button>
-          <button className="signup_button">SIGN UP</button>
+          <button className="login_button" onClick={() => setToggle(true)}>
+            LOG IN
+          </button>
+          <button className="signup_button" onClick={() => setToggle(false)}>
+            SIGN UP
+          </button>
         </div>
         {toggle ? (
           <div>
