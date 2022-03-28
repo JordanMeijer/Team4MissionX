@@ -1,0 +1,13 @@
+.HelpRequestsButtons {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.HelpRequestsText {
+    margin: 0%;
+}
+
+.HelpRequestsButtons>section>h3 {
+    margin: 0%;
+}

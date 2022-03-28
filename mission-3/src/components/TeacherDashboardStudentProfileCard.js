@@ -1,8 +1,6 @@
-import StudentProfilePicture1 from '../images/Teacher Areas/Ellipse -1.png'
 import './TeacherDashboardStudentProfileCard.css'
 
-export default function TeacherDashboardStudentProfileCard(
-    {name, studentProfilePicture}
+export default function TeacherDashboardStudentProfileCard({name, studentProfilePicture}
     ) {
     return (   
     <div className="studentProfileCard">
