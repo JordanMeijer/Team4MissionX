@@ -4,30 +4,30 @@ import "../components/LoginPage.css";
 function SignupStudent() {
   return (
     <div>
-      <form onSubmit={this.handleSubmit}>
+      <form>
         <input
           type="text"
           name="FUll Name"
           placeholder="Full Name"
-          className="Signup_inputs"
+          className="signup_inputs"
         />
         <input
           type="text"
           name="Email Address"
           placeholder="Email Address"
-          className="Signup_inputs"
+          className="signup_inputs"
         />
         <input
           type="text"
           name="Password"
           placeholder="Password"
-          className="Signup_inputs"
+          className="signup_inputs"
         />
         <input
           type="text"
           name="Confirm Password"
           placeholder="Confirm Password"
-          className="Signup_inputs"
+          className="signup_inputs"
         />
         <div>
           <button type="submit" className="submit_btn">
