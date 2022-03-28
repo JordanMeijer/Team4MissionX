@@ -1,9 +1,10 @@
 import React from "react";
+import "../components/LoginPage.css";
 
 function LoginTeacher() {
   return (
     <div>
-      <form onSubmit={this.handleSubmit}>
+      <form>
         <input
           type="text"
           name="Email Address"

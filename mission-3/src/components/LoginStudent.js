@@ -4,7 +4,7 @@ import "../components/LoginPage.css";
 function LoginStudent() {
   return (
     <div>
-      <form onSubmit={this.handleSubmit}>
+      <form>
         <input
           type="text"
           name="Email Address"

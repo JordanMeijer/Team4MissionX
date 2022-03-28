@@ -4,7 +4,7 @@ import "../components/LoginPage.css";
 function SignupTeacher() {
   return (
     <div>
-      <form onSubmit={this.handleSubmit}>
+      <form>
         <input
           type="text"
           name="FUll Name"
