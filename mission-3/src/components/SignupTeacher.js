@@ -9,25 +9,25 @@ function SignupTeacher() {
           type="text"
           name="FUll Name"
           placeholder="Full Name"
-          className="Sign_inputs"
+          className="Signup_inputs"
         />
         <input
           type="text"
           name="Email Address"
           placeholder="Email Address"
-          className="Sign_inputs"
+          className="Signup_inputs"
         />
         <input
           type="text"
           name="Password"
           placeholder="Password"
-          className="Sign_inputs"
+          className="Signup_inputs"
         />
         <input
           type="text"
           name="Confirm Password"
           placeholder="Confirm Password"
-          className="Sign_inputs"
+          className="Signup_inputs"
         />
       </form>
       <div>

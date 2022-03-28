@@ -1,9 +1,7 @@
 import React from "react";
-import StudentLoginImage from "../images/Home/Students@2x.png";
-import TeacherLoginImage from "../images/Home/teacher@2x.png";
 import "../components/LoginPage.css";
 
-function SignUpTextInputs() {
+function SignupStudent() {
   return (
     <div>
       <form>
@@ -11,25 +9,25 @@ function SignUpTextInputs() {
           type="text"
           name="FUll Name"
           placeholder="Full Name"
-          className="Sign_inputs"
+          className="Signup_inputs"
         />
         <input
           type="text"
           name="Email Address"
           placeholder="Email Address"
-          className="Sign_inputs"
+          className="Signup_inputs"
         />
         <input
           type="text"
           name="Password"
           placeholder="Password"
-          className="Sign_inputs"
+          className="Signup_inputs"
         />
         <input
           type="text"
           name="Confirm Password"
           placeholder="Confirm Password"
-          className="Sign_inputs"
+          className="Signup_inputs"
         />
       </form>
       <div>
@@ -41,4 +39,4 @@ function SignUpTextInputs() {
   );
 }
 
-export default SignUpTextInputs;
+export default SignupStudent;
