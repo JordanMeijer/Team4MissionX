@@ -29,12 +29,12 @@ function SignupStudent() {
           placeholder="Confirm Password"
           className="Signup_inputs"
         />
+        <div>
+          <button type="submit" className="submit_btn">
+            SIGN UP
+          </button>
+        </div>
       </form>
-      <div>
-        <button input type="submit" name="LOG IN" className="login_btn">
-          SIGN UP
-        </button>
-      </div>
     </div>
   );
 }

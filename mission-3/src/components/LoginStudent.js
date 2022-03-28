@@ -1,6 +1,4 @@
 import React from "react";
-import StudentLoginImage from "../images/Home/Students@2x.png";
-import TeacherLoginImage from "../images/Home/teacher@2x.png";
 import "../components/LoginPage.css";
 
 function LoginStudent() {
@@ -11,20 +9,20 @@ function LoginStudent() {
           type="text"
           name="Email Address"
           placeholder="Email Address"
-          className="inputs"
+          className="login_inputs"
         />
         <input
           type="text"
           name="Password"
           placeholder="Password"
-          className="inputs"
+          className="login_inputs"
         />
+        <div>
+          <button type="submit" className="submit_btn">
+            LOG IN
+          </button>
+        </div>
       </form>
-      <div>
-        <button input type="submit" name="LOG IN" className="submit_btn">
-          LOG IN
-        </button>
-      </div>
     </div>
   );
 }

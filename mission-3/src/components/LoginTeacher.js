@@ -8,20 +8,20 @@ function LoginTeacher() {
           type="text"
           name="Email Address"
           placeholder="Email Address"
-          className="inputs"
+          className="login_inputs"
         />
         <input
           type="text"
           name="Password"
           placeholder="Password"
-          className="inputs"
+          className="login_inputs"
         />
+        <div>
+          <button type="submit" className="submit_btn">
+            LOG IN
+          </button>
+        </div>
       </form>
-      <div>
-        <button input type="submit" name="LOG IN" className="submit_btn">
-          LOG IN
-        </button>
-      </div>
     </div>
   );
 }
