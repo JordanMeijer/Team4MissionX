@@ -28,14 +28,9 @@ export default function TeacherDashboardHelpRequests() {
                 <div className='DashboardContentsParentContainer'>
                     <div className='DashboardContentsChildContainer'>
                         <h2 className='HelpRequestsText'>HELP REQUESTS</h2>
-                        <div className='HelpRequestsButtons'>
-                            <section>
+                        <div className='HelpRequestsButtons'>                          
                                 <h3>REPLY</h3>
-                            </section>
-                            <section>
                                 <h3>MARK AS DONE</h3>
-                            </section>
-
                         </div>
                         {HelpRequestCard}
                     </div>

@@ -12,9 +12,10 @@
     margin-bottom: 23px;
     width: 100%;
     padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.studentProfilePicture {
+.HelpRequestStudentProfilePicture {
     height: 60px;
     width: height;
     margin-left: 30px;
@@ -35,6 +36,7 @@
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 20px;
+    box-shadow: 1px 2px 4px  inset;
     
     
 }
