@@ -18,7 +18,7 @@ import StudentProfilePicture12 from './images/Teacher Areas/Ellipse -12.png'
 import StudentProfilePicture13 from './images/Teacher Areas/Ellipse -13.png'
 import StudentProfilePicture14 from './images/Teacher Areas/Ellipse -14.png'
 import StudentProfilePicture15 from './images/Teacher Areas/Ellipse -15.png'
-]
+
 
 let StudentProfiles = [
     { name: "AIDEN ANDREWS", studentProfilePicture: StudentProfilePicture1, gender: "male", helpRequested: true, dateSubmited: "Tue 28 April 2020", timeSubmited: "10:43 AM" },
@@ -35,7 +35,7 @@ let StudentProfiles = [
     { name: "SHANE O'MONAHAN", studentProfilePicture: StudentProfilePicture12, gender: "female", helpRequested: false },
     { name: "JAVIER FUEGO", studentProfilePicture: StudentProfilePicture13, gender: "male", helpRequested: false },
     { name: "NEVEAH MACHENRY", studentProfilePicture: StudentProfilePicture14, gender: "male", helpRequested: false },
-    { name: "MARK O'LEARY", studentProfilePicture: StudentProfilePicture15, gender: "male", helpRequested: false },
+    { name: "MARK O'LEARY", studentProfilePicture: StudentProfilePicture15, gender: "male", helpRequested: false }
 ]
 export default StudentProfiles
 
