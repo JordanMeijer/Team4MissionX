@@ -19,7 +19,7 @@ import StudentProfilePicture13 from './images/Teacher Areas/Ellipse -13.png'
 import StudentProfilePicture14 from './images/Teacher Areas/Ellipse -14.png'
 import StudentProfilePicture15 from './images/Teacher Areas/Ellipse -15.png'
 
-let StudentProfiles = [
+let StudentProfiles2 = [
     { name: "AIDEN ANDREWS", studentProfilePicture: StudentProfilePicture1, gender: "male", helpRequested: true, dateSubmited: "Tue 28 April 2020", timeSubmited: "10:43 AM" },
     { name: "COURTNEY BRISTOL", studentProfilePicture: StudentProfilePicture2, gender: "female", helpRequested: false },
     { name: "NAGANI CORTES", studentProfilePicture: StudentProfilePicture3, gender: "male", helpRequested: false },
@@ -34,6 +34,24 @@ let StudentProfiles = [
     { name: "LUCIA MENDEZ", studentProfilePicture: StudentProfilePicture12, gender: "female", helpRequested: false },
     { name: "HANU NEPE", studentProfilePicture: StudentProfilePicture13, gender: "male", helpRequested: false },
     { name: "SHANE O'MONAHAN", studentProfilePicture: StudentProfilePicture14, gender: "male", helpRequested: false },
+    { name: "MARK O'LEARY", studentProfilePicture: StudentProfilePicture15, gender: "male", helpRequested: false },
+]
+
+let StudentProfiles = [
+    { name: "AIDEN ANDREWS", studentProfilePicture: StudentProfilePicture1, gender: "male", helpRequested: true, dateSubmited: "Tue 28 April 2020", timeSubmited: "10:43 AM" },
+    { name: "TOKIO HAN", studentProfilePicture: StudentProfilePicture2, gender: "female", helpRequested: false },
+    { name: "HARRY MCRATH", studentProfilePicture: StudentProfilePicture3, gender: "male", helpRequested: false },
+    { name: "COURTNEY BRISTOL", studentProfilePicture: StudentProfilePicture4, gender: "female", helpRequested: true, dateSubmited: "Tue 28 April 2020", timeSubmited: "9:52 AM" },
+    { name: "LISA HORAN", studentProfilePicture: StudentProfilePicture5, gender: "male", helpRequested: true, dateSubmited: "Mon 27 April 2020", timeSubmited: "4:59 PM" },
+    { name: "LUCIA MENDEZ", studentProfilePicture: StudentProfilePicture6, gender: "male", helpRequested: true, dateSubmited: "Mon 27 April 2020", timeSubmited: "3:00 PM" },
+    { name: "NAGANI CORTES", studentProfilePicture: StudentProfilePicture7, gender: "female", helpRequested: false },
+    { name: "ALICE KINDELLAN", studentProfilePicture: StudentProfilePicture8, gender: "female", helpRequested: false },
+    { name: "HANU NEPE", studentProfilePicture: StudentProfilePicture9, gender: "female", helpRequested: false },
+    { name: "RAWIRI FLETCHER", studentProfilePicture: StudentProfilePicture10, gender: "male", helpRequested: true, dateSubmited: "Mon 27 April 2020", timeSubmited: "11:23 AM" },
+    { name: "SIMON LAINE", studentProfilePicture: StudentProfilePicture11, gender: "male", helpRequested: false },
+    { name: "SHANE O'MONAHAN", studentProfilePicture: StudentProfilePicture12, gender: "female", helpRequested: false },
+    { name: "JAVIER FUEGO", studentProfilePicture: StudentProfilePicture13, gender: "male", helpRequested: false },
+    { name: "NEVEAH MACHENRY", studentProfilePicture: StudentProfilePicture14, gender: "male", helpRequested: false },
     { name: "MARK O'LEARY", studentProfilePicture: StudentProfilePicture15, gender: "male", helpRequested: false },
 ]
 export default StudentProfiles

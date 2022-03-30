@@ -29,6 +29,8 @@
 .StudentProfilesGrid {
   display: grid;
   grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-auto-flow: column;
   height: 90%;
   width: 90%;
 }
