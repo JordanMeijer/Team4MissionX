@@ -4,19 +4,16 @@
     display: flex;
     flex-direction: column;
     margin: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .studentProfileCard > * {
-    
     margin-left: auto;
     margin-right: auto;
-    
-    
   }
 
 .studentProfilePicture {
-    height: 50%;
-    width: height;
+    height: min(50%,5VW);
     margin-top: auto;
 }
 

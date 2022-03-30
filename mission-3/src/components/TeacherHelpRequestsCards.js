@@ -6,7 +6,7 @@ function TeacherHelpRequestsCards({ studentProfilePicture, name, time, date }) {
         <div className='TeacherHelpRequestCardParentContainer'>
             <div className='CheckBox'></div>
             <div className='TeacherHelpRequestCardContainer'>
-                <img src={studentProfilePicture} alt="dashboard_icon" className='studentProfilePicture' />
+                <img src={studentProfilePicture} alt="dashboard_icon" className='HelpRequestStudentProfilePicture' />
                 <h3 className='CardText'>
                     {name} needs help with their project.
                 </h3>
