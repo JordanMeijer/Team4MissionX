@@ -1,0 +1,21 @@
+.profile_body {
+  display: flex;
+  background: #eeeeee 0% 0% no-repeat padding-box;
+  border: 1px solid #eeeeee;
+}
+
+.profile_settings {
+  width: 20%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 2px solid #e2dfdf;
+  border-radius: 30px;
+}
+
+.profile_data {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 2px solid #e2dfdf;
+  border-radius: 30px;
+}
