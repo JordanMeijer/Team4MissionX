@@ -1,10 +1,22 @@
 import './HomeHeader.css';
 import StarLogo07_2 from '../images/Home/Star Logo 07-2.png';
 import IconUserCircle from '../images/Student Areas/Icon awesome-user-circle.png';
+import StudentProfile from '../images/Student Areas/Ellipse 38.png';
 import Languages from './Languages';
 
 
-function HomeHeader () {
+function HomeHeader (props) {
+  const pageProfile = [];
+  
+  if (props.render_home) {
+    pageProfile[0] = <img className="header_user_circle" src={IconUserCircle} alt ="icon_awesome_user_circle" />;
+    pageProfile[1] = <div className="header_register_login_element">REGISTER | LOGIN</div>;
+  }
+  else {
+    pageProfile[0] = <img className="header_user_profile" src={StudentProfile} alt ="student_profile" />;
+    pageProfile[1] = <div className="header_register_login_element">RAWIRI FLETCHER</div>;
+  }
+
   return (
     <>
       <header className="header_main_style">
@@ -22,8 +34,7 @@ function HomeHeader () {
             <Languages className="header_flags" />
           </section>
           <section>
-            <img className="header_user_circle" src={IconUserCircle} alt ="icon_awesome_user_circle" />
-            <div className="header_register_login_element">REGISTER | LOGIN</div>
+            {pageProfile}
           </section>
           
         </div>

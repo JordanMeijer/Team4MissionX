@@ -7,7 +7,7 @@ import HomeFooter from '../components/HomeFooter';
 function Home() {
   return (
     <>
-      <HomeHeader />
+      <HomeHeader render_home={true}/>
       <HomeHero />
 
       <div>
