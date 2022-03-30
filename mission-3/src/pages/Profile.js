@@ -1,5 +1,6 @@
-import "./Profile.css"
-import HomeHeader from "../components/HomeHeader"
+import React from "react";
+import "./Profile.css";
+import HomeHeader from "../components/HomeHeader";
 
 export default function Profile() {
   return (
