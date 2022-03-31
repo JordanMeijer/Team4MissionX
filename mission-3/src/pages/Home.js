@@ -1,13 +1,13 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import HomeHeader from "../components/HomeHeader";
-import HomeHero from '../components/HomeHero';
-import HomeFooter from '../components/HomeFooter';
-
+import HomeHero from "../components/HomeHero";
+import HomeFooter from "../components/HomeFooter";
 
 function Home() {
   return (
     <>
-      <HomeHeader render_home={true}/>
+      <HomeHeader render_home={true} />
       <HomeHero />
 
       <div>

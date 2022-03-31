@@ -1,14 +1,15 @@
-import './Languages.css';
-import nz_flag from '../images/Home/NZ Flag.png';
-import maori_flag from '../images/Home/Maori flag.png';
+import React from "react";
+import "./Languages.css";
+import nz_flag from "../images/Home/NZ Flag.png";
+import maori_flag from "../images/Home/Maori flag.png";
 
-function Languages () {
+function Languages() {
   return (
     <div>
       <img id="nz_flag" src={nz_flag} alt="NZ Flag" />
       <img id="maori_flag" src={maori_flag} alt="Maori Flag" />
     </div>
   );
-};
+}
 
 export default Languages;
