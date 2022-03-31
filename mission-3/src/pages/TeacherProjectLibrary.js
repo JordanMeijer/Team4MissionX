@@ -1,9 +1,13 @@
+import React from "react";
 import StudentTeacherHeader from "../components/StudentTeacherHeader";
 
 export default function TeacherProjectLibrary() {
   return (
     <>
-      <StudentTeacherHeader render_project_bar={false} text_middle="Help Centre"/>
+      <StudentTeacherHeader
+        render_project_bar={false}
+        text_middle="Help Centre"
+      />
     </>
   );
-};
+}

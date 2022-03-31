@@ -1,6 +1,7 @@
-import './StudentTeacherNavBar.css';
+import React from "react";
+import "./StudentTeacherNavBar.css";
 
-function StudentTeacherNavBar (props) {
+function StudentTeacherNavBar(props) {
   return (
     <div className="header_button">
       <button className="header_left_button">{props.text_navbar_left}</button>

@@ -1,6 +1,7 @@
-import './HomeFooter.css'
+import React from "react";
+import "./HomeFooter.css";
 
-function HomeFooter () {
+function HomeFooter() {
   return (
     <>
       <footer className="footer_main_style">
@@ -53,6 +54,6 @@ function HomeFooter () {
       </footer>
     </>
   );
-};
+}
 
 export default HomeFooter;
