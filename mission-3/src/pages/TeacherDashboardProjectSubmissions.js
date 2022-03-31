@@ -8,7 +8,7 @@ export default function TeacherDashboardProjectSubmissions() {
     return (
         <div>
             <div>
-                <StudentTeacherHeader />
+                <StudentTeacherHeader render_project_bar={false} text_middle="Help Centre" />
             </div>
             <div className='Dashboard'>
                 <SideBar page="/teacherdashboard/projectsubmissions" TeacherVersion={true} />

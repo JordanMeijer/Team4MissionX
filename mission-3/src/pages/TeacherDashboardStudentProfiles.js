@@ -14,7 +14,7 @@ export default function TeacherDashboardStudentProfiles() {
   return (
     <div>
         <div>
-            <StudentTeacherHeader />
+            <StudentTeacherHeader render_project_bar={false} text_middle="Help Centre" />
         </div>
         <div className='Dashboard'> 
             <SideBar page="/teacherdashboard/studentprofiles" TeacherVersion={true}/> 

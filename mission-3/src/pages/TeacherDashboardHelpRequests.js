@@ -20,7 +20,7 @@ export default function TeacherDashboardHelpRequests() {
     return (
         <div>
             <div>
-                <StudentTeacherHeader />
+                <StudentTeacherHeader render_project_bar={false} text_middle="Help Centre" />
             </div>
             <div className='Dashboard'>
                 <SideBar page="/teacherdashboard/helprequests" TeacherVersion={true} />
