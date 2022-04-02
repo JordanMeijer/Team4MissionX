@@ -5,11 +5,11 @@ import HomeHeader from "../components/HomeHeader";
 export default function Profile() {
   const [studentID, setStudentID] = useState(2);
   const [studentData, setStudentData] = useState([{
-    Name: 'name',
+    StudentName: 'student',
     Email: 'email',
     School: 'School',
     ProfilePic: 'ProfilePic',
-    TeacherID: 0,
+    TeacherName: 'teacher',
     DateOfBirth: '0',
     ContactNumber: '0'
   }]); 
@@ -27,7 +27,7 @@ export default function Profile() {
 
   return (
     <>
-      <HomeHeader picture_path={studentData.map(key => key.ProfilePic)} person_name={studentData.map(key => key.Name.toUpperCase())}/>
+      <HomeHeader picture_path={studentData.map(key => key.ProfilePic)} person_name={studentData.map(key => key.StudentName.toUpperCase())}/>
       <div className="profile_body">
         <div className="profile_settings_background">
           <div className="profile_settings">
@@ -39,7 +39,7 @@ export default function Profile() {
         <div className="profile_right_side">
           <div className="profile_data">
             <div>
-              <h2 className="profile_person_name">{studentData.map(key => key.Name)}</h2>
+              <h2 className="profile_person_name">{studentData.map(key => key.StudentName)}</h2>
             </div>
             <div className="profile_person_details">
               <div>
@@ -52,7 +52,7 @@ export default function Profile() {
               </div>
               <div>
                 <h3 className="profile_detail_data">{studentData.map(key => key.School)}</h3>
-                <h3 className="profile_detail_data">{studentData.map(key => key.TeacherID)}</h3>
+                <h3 className="profile_detail_data">{studentData.map(key => key.Name)}</h3>
                 <h3 className="profile_detail_data">Beginner</h3>
                 <h3 className="profile_detail_data">{studentData.map(key => key.DateOfBirth)}</h3>
                 <h3 className="profile_detail_data">{studentData.map(key => key.ContactNumber)}</h3>

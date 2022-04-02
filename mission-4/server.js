@@ -32,7 +32,9 @@ app.get('/', (req, res) => {
 app.get('/studentprofile/:studentID', (req, res) => {
   console.log(`Received a GET request to /studentprofile/:studentID`);
   const { studentID } = req.params;
-  connection.query(`SELECT * FROM missio20_team4.Student WHERE StudentID=${studentID}`, (error, result) => {
+  connection.query(`SELECT missio20_team4.Student.*, missio20_team4.Teacher.Name FROM missio20_team4.Student
+                    INNER JOIN missio20_team4.Teacher ON missio20_team4.Student.TeacherID=missio20_team4.Teacher.TeacherID
+                    HAVING missio20_team4.Student.StudentID=${studentID}`, (error, result) => {
     if (error) {        
       console.log('Error', error);        
       res.send("You' got an error ! " + error.code);      
