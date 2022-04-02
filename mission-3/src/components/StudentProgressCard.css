@@ -10,14 +10,12 @@
     
 }
 
-
 .NameAndProjectsCompletedContainer {
     display: flex;
     flex-direction: column;
     width: 200px;
     margin-left: 20px;
 }
-
 
 .StudentNameText{
     font-size: 14px;
@@ -34,6 +32,7 @@
     margin-bottom: auto;
     margin: auto;
 }
+
 .ProjectEllipse, .ProjectEllipseCompleted {
     border: 4px solid pink;
     height: 36px;

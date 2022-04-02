@@ -1,8 +1,5 @@
 import React from "react";
 import "./HomeHeader.css";
-import StarLogo07_2 from "../images/Home/Star Logo 07-2.png";
-import IconUserCircle from "../images/Student Areas/Icon awesome-user-circle.png";
-import StudentProfile from "../images/Student Areas/Ellipse 38.png";
 import Languages from "./Languages";
 
 function HomeHeader(props) {
@@ -12,23 +9,25 @@ function HomeHeader(props) {
     pageProfile[0] = (
       <img
         className="header_user_circle"
-        src={IconUserCircle}
+        src='images/Student Areas/Icon awesome-user-circle.png'
         alt="icon_awesome_user_circle"
+        key="image"
       />
     );
     pageProfile[1] = (
-      <div className="header_register_login_element">REGISTER | LOGIN</div>
+      <div className="header_register_login_element" key="text">REGISTER | LOGIN</div>
     );
   } else {
     pageProfile[0] = (
       <img
         className="header_user_profile"
-        src={StudentProfile}
+        src={props.picture_path}
         alt="student_profile"
+        key="image"
       />
     );
     pageProfile[1] = (
-      <div className="header_register_login_element">RAWIRI FLETCHER</div>
+      <div className="header_register_login_element" key="text">{props.person_name}</div>
     );
   }
 
@@ -36,7 +35,7 @@ function HomeHeader(props) {
     <>
       <header className="header_main_style">
         <section>
-          <img src={StarLogo07_2} alt="home_logo" />
+          <img src='images/Home/Star Logo 07-2.png' alt="home_logo" />
         </section>
         <section>
           <div className="header_navbar_content">HOME</div>

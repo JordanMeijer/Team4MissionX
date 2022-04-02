@@ -19,21 +19,6 @@ import StudentProfilePicture13 from './images/Teacher Areas/Ellipse -13.png'
 import StudentProfilePicture14 from './images/Teacher Areas/Ellipse -14.png'
 import StudentProfilePicture15 from './images/Teacher Areas/Ellipse -15.png'
 
-
-// let StudentProfiles = []
-
-// fetch('http://localhost:5000')
-//     .then((res) => res.json())
-//     .then((jsonData) => {
-//     console.log(jsonData);
-//     let StudentProfiles = jsonData
-//     return StudentProfiles;
-// })
-
-// console.log(StudentProfiles)
-
-
-
 let StudentProfiles = [
     { name: "AIDEN ANDREWS", studentProfilePicture: StudentProfilePicture1, gender: "male", helpRequested: true, dateSubmited: "Tue 28 April 2020", timeSubmited: "10:43 AM" },
     { name: "TOKIO HAN", studentProfilePicture: StudentProfilePicture2, gender: "female", helpRequested: false },

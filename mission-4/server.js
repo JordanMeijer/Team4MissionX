@@ -11,7 +11,7 @@ app.use(express.json());
 const connection = mysql.createConnection({
   host: process.env.HOST,
   database: process.env.DATABASE,
-  user: process.env.USER,
+  user: process.env.MYSQL_USER,
   password: process.env.PASSWORD,
 });
 
@@ -29,7 +29,20 @@ app.get('/', (req, res) => {
   });
 });
 
-//wasd
+app.get('/studentprofile/:studentID', (req, res) => {
+  console.log(`Received a GET request to /studentprofile/:studentID`);
+  const { studentID } = req.params;
+  connection.query(`SELECT * FROM missio20_team4.Student WHERE StudentID=${studentID}`, (error, result) => {
+    if (error) {        
+      console.log('Error', error);        
+      res.send("You' got an error ! " + error.code);      
+    } 
+    else {        
+      console.log(result);        
+      res.send(result);      
+    }
+  });
+});
 
 const PORT = process.env.PORT;
 console.log("server running at port", PORT)

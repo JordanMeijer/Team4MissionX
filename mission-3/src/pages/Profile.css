@@ -44,7 +44,7 @@
 .profile_right_side {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 60%;
   margin-top: 5%;
 }
 

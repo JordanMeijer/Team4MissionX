@@ -1,13 +1,12 @@
 import React from "react";
 import "./HomeHero.css";
-import HeroImage from "../images/Home/Hero image option 1 edit 2.png";
 
 function HomeHero() {
   return (
     <div className="homehero_wrapper">
       <img
         className="homehero_image"
-        src={HeroImage}
+        src='images/Home/Hero image option 1 edit 2.png'
         alt="hero-option-1-edit-2"
       />
       <h1 className="homehero_h1">
