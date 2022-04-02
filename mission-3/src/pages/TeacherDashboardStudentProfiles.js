@@ -29,7 +29,7 @@ export default function TeacherDashboardStudentProfiles() {
 
   const studentProfileCards = StudentProfiles.map(studentProfiles => {
     return (
-      <TeacherDashboardStudentProfileCard key={studentProfiles} studentProfilePicture={studentProfiles.ProfilePic} name={studentProfiles.Name}/>
+      <TeacherDashboardStudentProfileCard key={studentProfiles} studentProfilePicture={studentProfiles.ProfilePic} name={studentProfiles.StudentName}/>
     )
   })
   
