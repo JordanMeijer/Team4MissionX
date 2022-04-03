@@ -3,9 +3,8 @@ import "./TeacherDashboard.css";
 
 import SideBar from "../components/SideBar";
 import StudentTeacherHeader from "../components/StudentTeacherHeader";
-import StudentProjectBuilder1 from "../components/StudentProjectBuilder1";
 
-export default function StudentProjectBuilder() {
+export default function StudentDashboard() {
   return (
     <>
       <StudentTeacherHeader
@@ -13,7 +12,7 @@ export default function StudentProjectBuilder() {
         text_middle="Ask Teacher for Help"
       />
       <div className="Dashboard">
-        <SideBar page="/studentprojectbuilder" />
+        <SideBar page="/studentdashboard" TeacherVersion={false}/>
         <div className="DashboardContentsParentContainer">
           <div className="DashboardContentsChildContainer">
             <h1 className="BeginnerCourseText">Explore Scratch Blocks</h1>

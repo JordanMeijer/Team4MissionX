@@ -20,16 +20,10 @@ function Home() {
         <Link to="/profile">Profile</Link>
       </div>
       <div>
-        <Link to="/studentprojectbuilder">Student Project Builder</Link>
+        <Link to="/studentdashboard">Student Dashboard</Link>
       </div>
       <div>
-        <Link to="/studentprojectlibrary">Student Project Library</Link>
-      </div>
-      <div>
-        <Link to="/teacherdashboard">Teacher Dashboard</Link>
-      </div>
-      <div>
-        <Link to="/teacherprojectbuilder">Teacher Project Builder</Link>
+        <Link to="/teacherdashboard/progresstracker">Teacher Dashboard</Link>
       </div>
       <div>
         <Link to="/teacherprojectlibrary">Teacher Project Library</Link>
