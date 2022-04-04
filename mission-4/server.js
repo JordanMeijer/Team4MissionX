@@ -55,7 +55,7 @@ app.get("/studentprofile/:studentID", (req, res) => {
   );
 });
 
-app.post("./loginSignupPage/:create_user_student", (req, res) => {
+app.post("/user_create_student", (req, res) => {
   const name = req.body.create_full_name;
   const email = req.body.create_email_address;
   const password = req.body.create_password;
