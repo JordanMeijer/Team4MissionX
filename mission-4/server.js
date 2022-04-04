@@ -55,21 +55,20 @@ app.get("/studentprofile/:studentID", (req, res) => {
   );
 });
 
-app.post("/user_create_student", (req, res) => {
-  const name = req.body.create_full_name;
-  const email = req.body.create_email_address;
-  const password = req.body.create_password;
+app.post("/create_user_student/", (req, res) => {
+  const { name, email, password } = req.body;
 
-  const queryString =
-    "INSERT INTO missio20_team4.Student (StudentName, Email, Password) VALUES (?, ?, ?)";
-  getConnection().query(
-    queryString,
+  connection.query(
+    `INSERT INTO missio20_team4.Student (StudentName, Email, Password) VALUES (?, ?, ?);`,
     [name, email, password],
-    (err, result, fields) => {
+    (err, result) => {
       if (err) {
         console.log("Failed to create new user:" + err);
         res.sendStatus(500);
         return;
+      } else {
+        console.log(result);
+        res.send("User created successfully");
       }
     }
   );
