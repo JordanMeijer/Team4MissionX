@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,700;1,800;1,900&family=Open+Sans:wght@500;700&display=swap");
+
+.StudentDashboardSubmitSectionTag {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.StudentDashboardSubmitH3Tag {
+  text-align: center;
+  font: normal normal bold 24px/32px Nunito;
+  letter-spacing: 0.48px;
+  margin-top: 15%;
+  color: #707070;
+}
+
+.StudentDashboardSubmitPTag {
+  text-align: center;
+  font: normal normal bold 16px/22px Open Sans;
+  letter-spacing: 0.32px;
+  margin-top: 7%;
+  margin-bottom: 10%;
+  color: #707070;
+}
+
+.StudentDashboardSubmitButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content:end;
+  background: #F91C85 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 5px #00000040;
+  border-radius: 20px;
+  font: normal normal 800 20px/20px Nunito;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+  width: 243px;
+  height: 153px;
+  margin-left: 31%;
+}
+
+.StudentDashboardSubmitButtonImage {
+  width: 25%;
+}

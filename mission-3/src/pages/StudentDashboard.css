@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,700;1,800;1,900&family=Open+Sans:wght@500;700&display=swap");
+
+.StudentDashboardH3Tag {
+  text-align: center;
+  font: normal normal bold 24px/32px Nunito;
+  letter-spacing: 0.48px;
+  color: #707070;
+  margin: auto;
+  padding: auto;
+}
+
+.StudentDashboardPTag {
+  text-align: center;
+  font: bold 16px/22px Open Sans;
+  letter-spacing: 0.32px;
+  color: #707070;
+}
+
+.StudentDashboardBlocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.StudentDashboardBlockPTag {
+  text-align: center;
+  text-align: left;
+  font: normal normal bold 18px/24px Nunito;
+  letter-spacing: 0.36px;
+  color: #707070;
+}
+
+.StudentDashboardLookBlocks {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width:75%;
+}
+
+.StudentDashboardControlBlocks {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 75%;
+}
+
+.StudentDashboardMotionBlocks {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 75%;
+}
