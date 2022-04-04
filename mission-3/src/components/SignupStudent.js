@@ -4,28 +4,28 @@ import "../components/LoginPage.css";
 function SignupStudent() {
   return (
     <div>
-      <form>
+      <form action="/user_create" method="POST">
         <input
           type="text"
-          name="FUll Name"
+          name="create_full_name"
           placeholder="Full Name"
           className="signup_inputs"
         />
         <input
           type="text"
-          name="Email Address"
+          name="create_email_address"
           placeholder="Email Address"
           className="signup_inputs"
         />
         <input
           type="text"
-          name="Password"
+          name="create_password"
           placeholder="Password"
           className="signup_inputs"
         />
         <input
           type="text"
-          name="Confirm Password"
+          name="confirm_password"
           placeholder="Confirm Password"
           className="signup_inputs"
         />
