@@ -1,7 +1,7 @@
 const express = require("express");
 const teacherSignupRouter = express.Router();
 
-studentSignupRouter.post("/", (req, res) => {
+teacherSignupRouter.post("/", (req, res) => {
   const { name, email, password } = req.body;
 
   connection.query(

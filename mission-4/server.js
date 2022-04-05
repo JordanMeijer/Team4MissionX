@@ -11,7 +11,6 @@ app.use(express.json());
 app.use(express.static("./src"));
 
 const bodyParser = require("body-parser");
-const { studentSignupRouter } = require("./studentsignup.routes");
 app.use(bodyParser.urlencoded({ extended: false }));
 // to help process requests easier
 

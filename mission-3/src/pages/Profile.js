@@ -60,9 +60,7 @@ export default function Profile() {
               </div>
             </div>
           </div>
-          <div>
-            <button className="profile_back_button">BACK TO PROJECTS</button>
-          </div>
+          <button className="profile_back_button">BACK TO PROJECTS</button>
         </div>
       </div>
     </>

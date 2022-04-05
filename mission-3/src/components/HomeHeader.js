@@ -35,7 +35,9 @@ function HomeHeader(props) {
     <>
       <header className="header_main_style">
         <section>
-          <img src='images/Home/Star Logo 07-2.png' alt="home_logo" />
+          <img 
+            src='images/Home/Star Logo 07-2.png' 
+            alt="home_logo" />
         </section>
         <section>
           <div className="header_navbar_content">HOME</div>
