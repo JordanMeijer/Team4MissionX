@@ -20,14 +20,13 @@
 }
 
 .header_user_circle {
-  margin-top: 1px;
+  width: 10%;
+  height: 60%;
+  margin-top: 6px;
 }
 
 .header_register_login_element {
-  display: inline-block;
-  margin-top: 2px;
-  margin-left: 10px;
-  text-align: left;
+  margin-left: 8px;
   font: normal normal bold 16px/32px Open Sans;
   letter-spacing: 0.32px;
   color: #ffffff;
@@ -59,5 +58,9 @@
 }
 
 .header_user_profile {
-  width: 10%;
+  width: 15%;
+}
+
+.header_data {
+  display: flex;
 }

@@ -20,6 +20,9 @@ function Home() {
         <Link to="/profile">Profile</Link>
       </div>
       <div>
+        <Link to="/studentproject">Student Projects</Link>
+      </div>
+      <div>
         <Link to="/studentdashboard">Student Dashboard</Link>
       </div>
       <div>

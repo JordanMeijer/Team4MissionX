@@ -35,12 +35,16 @@ function HomeHeader(props) {
     <>
       <header className="header_main_style">
         <section>
-          <img 
-            src='images/Home/Star Logo 07-2.png' 
-            alt="home_logo" />
+          <a href={`/`} >
+            <img 
+              src='images/Home/Star Logo 07-2.png' 
+              alt="home_logo" />
+          </a>
         </section>
         <section>
-          <div className="header_navbar_content">HOME</div>
+          <a href={`/`} >
+            <div className="header_navbar_content">HOME</div>
+          </a>
           <div className="header_navbar_content">FEATURES</div>
           <div className="header_navbar_content">TEACHERS</div>
         </section>
@@ -49,7 +53,7 @@ function HomeHeader(props) {
             <div className="header_lang_content">LANG</div>
             <Languages className="header_flags" />
           </section>
-          <section>{pageProfile}</section>
+          <section className="header_data">{pageProfile}</section>
         </div>
       </header>
     </>

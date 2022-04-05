@@ -1,5 +1,6 @@
 import "./Profile.css";
 import { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 import HomeHeader from "../components/HomeHeader";
 
 export default function Profile() {
@@ -60,7 +61,10 @@ export default function Profile() {
               </div>
             </div>
           </div>
-          <button className="profile_back_button">BACK TO PROJECTS</button>
+          <button 
+            className="profile_back_button" 
+            onClick={()=> window.location.href="http://localhost:3000"}> BACK TO PROJECTS 
+          </button>
         </div>
       </div>
     </>

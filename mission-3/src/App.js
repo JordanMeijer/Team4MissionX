@@ -1,10 +1,12 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
+
 import Home from "./pages/Home";
 import LoginSignupPage from "./pages/LoginSignupPage";
 import Profile from "./pages/Profile";
 import StudentDashboard from "./pages/StudentDashboard";
+import StudentProject from "./pages/StudentProject";
 import TeacherDashboardProgressTracker from "./pages/TeacherDashboardProgressTracker";
 import TeacherProjectLibrary from "./pages/TeacherProjectLibrary";
 import TeacherDashboardStudentProfiles from "./pages/TeacherDashboardStudentProfiles.js";
@@ -23,9 +25,22 @@ function App() {
       <div>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/loginSignupPage" element={<LoginSignupPage />} />
-            <Route path="/profile" element={<Profile />} />
+            <Route 
+              path="/" 
+              element={<Home />} 
+            />
+            <Route 
+              path="/loginSignupPage" 
+              element={<LoginSignupPage />} 
+            />
+            <Route 
+              path="/profile" 
+              element={<Profile />}
+            />
+            <Route
+              path="/studentproject"
+              element={<StudentProject />}
+            />
             <Route
               path="/studentdashboard"
               element={<StudentDashboard />}
