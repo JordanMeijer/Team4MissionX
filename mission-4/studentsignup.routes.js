@@ -1,7 +1,15 @@
+const mysql = require("mysql2");
 const express = require("express");
 const studentSignupRouter = express.Router();
 
-studentSignupRouter.post("/", (req, res) => {
+const connection = mysql.createConnection({
+  host: process.env.HOST,
+  database: process.env.DATABASE,
+  user: process.env.MYSQL_USER,
+  password: process.env.PASSWORD,
+});
+
+studentSignupRouter.post('/', (req, res) => {
   const { name, email, password } = req.body;
 
   connection.query(
@@ -21,5 +29,5 @@ studentSignupRouter.post("/", (req, res) => {
 });
 
 module.exports = {
-  studentSignupRouter,
+  studentSignupRouter
 };

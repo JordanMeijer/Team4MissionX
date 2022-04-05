@@ -99,3 +99,7 @@
   border-radius: 8px;
   box-shadow: 0px 4px 5px #00000029;
 }
+
+.modal-dialog {
+  max-width: 60vw    /* Occupy the 90% of the screen width */
+}
