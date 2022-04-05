@@ -2,6 +2,8 @@ const express = require("express");
 const mysql = require("mysql2");
 const cors = require("cors");
 const dotenv = require("dotenv").config();
+const { studentSignupRouter } = require("./studentsignup.routes");
+const { teacherSignupRouter } = require("./teachersignup.routes");
 
 const app = express();
 app.use(cors());
@@ -9,6 +11,7 @@ app.use(express.json());
 app.use(express.static("./src"));
 
 const bodyParser = require("body-parser");
+const { studentSignupRouter } = require("./studentsignup.routes");
 app.use(bodyParser.urlencoded({ extended: false }));
 // to help process requests easier
 
@@ -55,24 +58,9 @@ app.get("/studentprofile/:studentID", (req, res) => {
   );
 });
 
-app.post("/create_user_student/", (req, res) => {
-  const { name, email, password } = req.body;
+app.use("/create_user_student/", studentSignupRouter);
 
-  connection.query(
-    `INSERT INTO missio20_team4.Student (StudentName, Email, Password) VALUES (?, ?, ?);`,
-    [name, email, password],
-    (err, result) => {
-      if (err) {
-        console.log("Failed to create new user:" + err);
-        res.sendStatus(500);
-        return;
-      } else {
-        console.log(result);
-        res.send("User created successfully");
-      }
-    }
-  );
-});
+app.use("/create_user_teacher/", teacherSignupRouter);
 
 const PORT = process.env.PORT;
 console.log("server running at port", PORT);
