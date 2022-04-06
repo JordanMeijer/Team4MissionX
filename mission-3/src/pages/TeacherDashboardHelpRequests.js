@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import StudentTeacherHeader from '../components/StudentTeacherHeader';
 import SideBar from '../components/SideBar.js'
 import TeacherHelpRequestsCards from '../components/TeacherHelpRequestsCards';
-import StudentProfiles from '../StudentProfiles';
+
 
 
 export default function TeacherDashboardHelpRequests() {
