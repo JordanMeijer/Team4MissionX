@@ -5,6 +5,7 @@ import StudentTeacherHeader from '../components/StudentTeacherHeader';
 import SideBar from '../components/SideBar.js'
 import TeacherDashboardStudentProfileCard from '../components/TeacherDashboardStudentProfileCard'
 
+
 export default function TeacherDashboardStudentProfiles() { 
   const [StudentProfiles, setStudentProfiles] = useState([{name:"name", studentProfilePicture:"picture"}])
 
@@ -26,6 +27,7 @@ export default function TeacherDashboardStudentProfiles() {
     //  console.log(jsonData);
     //  }
     // getStudentProfiles()
+
 
   const studentProfileCards = StudentProfiles.map(studentProfiles => {
     return (

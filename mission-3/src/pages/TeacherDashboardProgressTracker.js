@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './TeacherDashboard.css';
 
 import SideBar from '../components/SideBar.js'

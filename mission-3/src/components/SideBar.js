@@ -31,6 +31,23 @@ import PrizeLight from "../images/Student Areas/prize.png";
 import ListLight from "../images/Student Areas/list copy.png";
 
 export default function SideBar(props) {
+
+  // These are for handling collapsing-expanding sidebar.
+  //  Storing locally info that can be reteived so that state is conserved between refreshes and changing pages
+  const sideBarCollapsed = localStorage.getItem('sidebar-collapsed');
+  const [isExpanded, setIsExpanded] = useState(sideBarCollapsed ? false : true)
+
+  const handleToggler = () => {
+    if (isExpanded) {
+      setIsExpanded(false);
+      localStorage.setItem('sidebar-collapsed', true);
+      return;
+    }
+    setIsExpanded(true);
+    localStorage.removeItem('sidebar-collapsed');
+  }
+
+
   const StudentButtonContents = [
     {
       link: "/studentdashboard",
@@ -123,7 +140,7 @@ export default function SideBar(props) {
     if (props.page === ButtonContents.link) {
       return (
         <DashboardButtonExpanded
-          key={ButtonContents}
+          key={ButtonContents.link}
           className="DashboardButtonDark"
           buttonText={ButtonContents.buttonText}
           image={ButtonContents.darkImage}
@@ -133,7 +150,7 @@ export default function SideBar(props) {
     } else {
       return (
         <DashboardButtonExpanded
-          key={ButtonContents}
+          key={ButtonContents.link}
           className="DashboardButtonLight"
           buttonText={ButtonContents.buttonText}
           image={ButtonContents.image}
@@ -146,23 +163,26 @@ export default function SideBar(props) {
   useEffect(() => props.TeacherVersion? null : getStudentPicture(), []);
 
   return (
-    <div className="SideBar">
+    <div className={isExpanded ? 'SideBar' : 'SideBar Collapsed'}>
       <div className="ProfilePicture">
         <img src={profilePicture} alt="profile_picture" />
       </div>
       <div className="DashboardButtons">{CreateButtons}</div>
-      <div className="AccountButtons">
-        <div className="AccountButtonText">
+      <div className={isExpanded ? 'SidebarCollapseButton' : 'SidebarExpandButton'} onClick={handleToggler}>
+        <div className={isExpanded ? 'PinkArrowLeft' : 'PinkArrowRight'}></div>
+      </div>
+      <div className="AccountButtonsContainer">
+        <div className="AccountButton">
           <img src={UserCircle} alt="user_circle_profile" />
-          <p>Profile</p>
+          <p className="AccountButtonText">Profile</p>
         </div>
-        <div className="AccountButtonText">
+        <div className="AccountButton">
           <img src={Settings} alt="settings_icon" />
-          <p>Settings</p>
+          <p className="AccountButtonText">Settings</p>
         </div>
-        <div className="AccountButtonText">
+        <div className="AccountButton">
           <img src={LogOut} alt="logout_icon" />
-          <p>Log out</p>
+          <p className="AccountButtonText">Log out</p>
         </div>
       </div>
     </div>
