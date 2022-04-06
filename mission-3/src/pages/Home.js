@@ -4,6 +4,8 @@ import HomeHeader from "../components/HomeHeader";
 import HomeHero from "../components/HomeHero";
 import HomeFooter from "../components/HomeFooter";
 import SectionTwo from "../components/SectionTwo";
+import SlideButtons from "../components/SlideSelectors";
+import SlideThree from "../components/SlideThree";
 
 function Home() {
   return (
@@ -30,6 +32,8 @@ function Home() {
         <Link to="/teacherprojectlibrary">Teacher Project Library</Link>
       </div>
       <SectionTwo />
+      <SlideButtons />
+      <SlideThree />
       <HomeFooter />
     </>
   );

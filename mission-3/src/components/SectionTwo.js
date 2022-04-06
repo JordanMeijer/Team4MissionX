@@ -1,30 +1,33 @@
 import React from "react";
-import PhotoOne from "../images/Home/girl-in-white-long-sleeve-dress-sitting-on-brown-wooden-3913426@2x.png";
-import PhotoTwo from "../images/Home/markus-spiske-AoX_1zm1NOM-unsplash@2x.png";
-import PhotoThree from "../images/Home/girl-in-red-dress-playing-a-wooden-blocks-3662667@2x.png";
-import PhotoFour from "../images/Home/annie-spratt-xKJUnFwfz3s-unsplash@2x.png";
+import PhotoOne from "../images/Home/girl-in-white-long-sleeve-dress-sitting-on-brown-wooden-3913426.png";
+import PhotoTwo from "../images/Home/markus-spiske-AoX_1zm1NOM-unsplash.png";
+import PhotoThree from "../images/Home/girl-in-red-dress-playing-a-wooden-blocks-3662667.png";
+import PhotoFour from "../images/Home/annie-spratt-xKJUnFwfz3s-unsplash.png";
+import "../components/SectionTwo.css";
 
 function SectionTwo() {
-  <section>
-    <h1>
-      Teaching kids programming and digital skills is MORE than just writing
-      code.
-    </h1>
-    <div>
-      <div>
-        <img src={PhotoOne}></img>
+  return (
+    <section>
+      <h1>
+        Teaching kids programming and digital skills is <b>MORE</b> than just
+        writing code.
+      </h1>
+      <div className="image_box">
+        <div>
+          <img src={PhotoOne} className="image image_one"></img>
+        </div>
+        <div>
+          <img src={PhotoTwo} className="image image_two"></img>
+        </div>
+        <div>
+          <img src={PhotoThree} className="image image_three"></img>
+        </div>
+        <div>
+          <img src={PhotoFour} className="image image_four"></img>
+        </div>
       </div>
-      <div>
-        <img src={PhotoTwo}></img>
-      </div>
-      <div>
-        <img src={PhotoThree}></img>
-      </div>
-      <div>
-        <img src={PhotoFour}></img>
-      </div>
-    </div>
-  </section>;
+    </section>
+  );
 }
 
 export default SectionTwo;

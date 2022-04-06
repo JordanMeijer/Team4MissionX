@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+    margin: 50px;
+    color: #6C6C6C;
+    font-size: 30px;
+}
+
+.image_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.image {
+    margin: 10px;
+}
