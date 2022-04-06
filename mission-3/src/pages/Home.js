@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import HomeHeader from "../components/HomeHeader";
 import HomeHero from "../components/HomeHero";
+import HomeBottom from "../components/HomeBottom";
 import HomeFooter from "../components/HomeFooter";
 
 function Home() {
@@ -28,6 +29,7 @@ function Home() {
       <div>
         <Link to="/teacherprojectlibrary">Teacher Project Library</Link>
       </div>
+      <HomeBottom />
       <HomeFooter />
     </>
   );
