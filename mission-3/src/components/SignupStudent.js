@@ -2,24 +2,23 @@ import React from "react";
 import "../components/LoginPage.css";
 
 function SignupStudent() {
-
   function signUpAPI() {
     const name = document.getElementById("full_name").value;
     const email = document.getElementById("email_address").value;
-    const password= document.getElementById("password").value;
+    const password = document.getElementById("password").value;
     const confirm_password = document.getElementById("confirm_password").value;
     const body = {
       name: name,
       email: email,
-      password: password
+      password: password,
     };
 
     const requestOptions = {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(body)
+      body: JSON.stringify(body),
     };
 
     fetch("http://localhost:4000/create_user_student", requestOptions)

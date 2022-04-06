@@ -9,7 +9,11 @@ const connection = mysql.createConnection({
   password: process.env.PASSWORD,
 });
 
+<<<<<<< HEAD
+studentSignupRouter.post("/", (req, res) => {
+=======
 studentSignupRouter.post('/', (req, res) => {
+>>>>>>> 75d274d8724273a8a1544c913b454cbec742cc2a
   const { name, email, password } = req.body;
 
   connection.query(

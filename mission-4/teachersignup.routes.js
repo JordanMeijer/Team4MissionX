@@ -1,5 +1,13 @@
+const mysql = require("mysql2");
 const express = require("express");
 const teacherSignupRouter = express.Router();
+
+const connection = mysql.createConnection({
+  host: process.env.HOST,
+  database: process.env.DATABASE,
+  user: process.env.MYSQL_USER,
+  password: process.env.PASSWORD,
+});
 
 teacherSignupRouter.post("/", (req, res) => {
   const { name, email, password } = req.body;
