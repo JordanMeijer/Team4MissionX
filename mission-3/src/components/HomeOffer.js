@@ -54,41 +54,45 @@ function HomeOffer() {
               className="HomeOfferCreate"
               id="animation"
               onClick={(e) => updateImage(e.target.id)}>
-              <img 
-                className="HomeOfferLeftImage" 
-                src="./images/Home/frame copy.png" 
-                alt="animation" 
-                onClick={(e) => updateImage(e.target.alt)} /><br></br>ANIMATION
+                <img 
+                  className="HomeOfferLeftImage" 
+                  src="./images/Home/frame copy.png" 
+                  alt="animation" 
+                  onClick={(e) => updateImage(e.target.alt)} />
+                <br></br>ANIMATION
             </div>
             <div 
               className="HomeOfferCreate"
               id="joystick"
               onClick={(e) => updateImage(e.target.id)}>
-              <img
-              className="HomeOfferLeftImage"
-              src="./images/Home/joystick copy.png" 
-              alt="joystick"
-              onClick={(e) => updateImage(e.target.alt)} /> <br></br>GAMES
+                <img
+                className="HomeOfferLeftImage"
+                src="./images/Home/joystick copy.png" 
+                alt="joystick"
+                onClick={(e) => updateImage(e.target.alt)} />
+                <br></br>GAMES
             </div>
             <div 
               className="HomeOfferCreate"
               id="chatbots"
               onClick={(e) => updateImage(e.target.id)}>
-              <img 
-                className="HomeOfferLeftImage" 
-                src="./images/Home/robotic copy.png" 
-                alt="chatbots"
-                onClick={(e) => updateImage(e.target.alt)}/> <br></br>CHATBOTS
+                <img 
+                  className="HomeOfferLeftImage" 
+                  src="./images/Home/robotic copy.png" 
+                  alt="chatbots"
+                  onClick={(e) => updateImage(e.target.alt)}/> 
+                <br></br>CHATBOTS
             </div>
             <div 
               className="HomeOfferCreate"
               id="augmented_reality" 
               onClick={(e) => updateImage(e.target.id)}>
-              <img 
-                className="HomeOfferLeftImage" 
-                src="./images/Home/augmented-reality copy.png" 
-                alt="augmented_reality" 
-                onClick={(e) => updateImage(e.target.alt)} /><br></br>AUGMENTED REALITY
+                <img 
+                  className="HomeOfferLeftImage" 
+                  src="./images/Home/augmented-reality copy.png" 
+                  alt="augmented_reality" 
+                  onClick={(e) => updateImage(e.target.alt)} />
+                <br></br>AUGMENTED REALITY
             </div>
           </div>
         </div>
