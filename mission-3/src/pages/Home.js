@@ -5,6 +5,9 @@ import HomeHero from "../components/HomeHero";
 import HomeOffer from "../components/HomeOffer";
 import HomeBottom from "../components/HomeBottom";
 import HomeFooter from "../components/HomeFooter";
+import SectionTwo from "../components/SectionTwo";
+import SlideButtons from "../components/SlideSelectors";
+import SlideThree from "../components/SlideThree";
 
 function Home() {
   return (
@@ -31,7 +34,11 @@ function Home() {
       <div>
         <Link to="/teacherprojectlibrary">Teacher Project Library</Link>
       </div>
+      <SectionTwo />
+      <SlideButtons />
+      <SlideThree />
       <HomeBottom />
+
       <HomeFooter />
     </>
   );

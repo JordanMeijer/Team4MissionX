@@ -1,0 +1,23 @@
+.section_box {
+    background-color: #EFEFF1;
+}
+
+.content_box {
+    margin-left: 400px;
+    margin-right: 400px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #606060;
+}
+
+li {
+    list-style-image: url(../images/Home/Star\ only\ copy.png);
+}
+
+h3 {
+    font: 20px;
+}
+
+p {
+    font-size: 16px;
+}
