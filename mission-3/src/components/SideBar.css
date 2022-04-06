@@ -4,8 +4,9 @@
   display: flex;
   flex-direction: column;
   background-color: rgb(67, 192, 246);
-  width: 400px;
   height: 95vh;
+  width: 236px
+
   position: relative;
 }
 

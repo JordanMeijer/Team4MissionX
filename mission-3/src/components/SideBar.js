@@ -1,12 +1,10 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./SideBar.css";
 import DashboardButtonExpanded from "./DashboardButtonExpanded";
 import LogOut from "../images/Student Areas/Icon awesome-sign-out-alt.png";
 import Settings from "../images/Student Areas/Icon material-settings.png";
 import UserCircle from "../images/Student Areas/Icon awesome-user-circle.png";
-import TeacherProfilePicture from "../images/Teacher Areas/Ellipse 38.png";
-import StudentProfilePicture from "../images/Student Areas/Ellipse 38.png";
+
 // Icons used for Teacher Sidebar
 import ProgressTrackerIconLight from "../images/Teacher Areas/Progress light.png";
 import ProgressTrackerIconDark from "../images/Teacher Areas/Progress dark.png";
@@ -17,6 +15,7 @@ import HelpRequestIconDark from "../images/Teacher Areas/Icon material-live-help
 import ProjectSubmissionsIconLight from "../images/Teacher Areas/submit proj.png";
 import ProjectSubmissionsIconDark from "../images/Teacher Areas/submit proj dark.png";
 import ProjectLibraryIconLight from "../images/Teacher Areas/library light.png";
+
 //Icons used for Student Sidebar
 import ObjectiveIconLight from "../images/Student Areas/objectives.png";
 import ObjectiveIconDark from "../images/Student Areas/objectives dark.png";
@@ -51,44 +50,44 @@ export default function SideBar(props) {
 
   const StudentButtonContents = [
     {
-      link: "/studentprojectbuilder",
+      link: "/studentdashboard",
       buttonText: "LEARNING OBJECTIVES",
       image: ObjectiveIconLight,
-      darkImage: ObjectiveIconDark,
+      darkImage: ObjectiveIconDark
     },
     {
-      link: "/studentprojectbuilder1",
+      link: "/studentdashboard/instructions",
       buttonText: "INSTRUCTIONS",
       image: StepsLight,
-      darkImage: StepsDark,
+      darkImage: StepsDark
     },
     {
-      link: "/studentprojectbuilder2",
+      link: "/studentdashboard/videotutorial",
       buttonText: "VIDEO TUTORIAL",
       image: VideoLight,
-      darkImage: VideoDark,
+      darkImage: VideoDark
     },
     {
-      link: "/studentprojectbuilder3",
+      link: "/studentdashboard/makeproject",
       buttonText: "MAKE PROJECT",
       image: NewProjLight,
-      darkImage: NewProjDark,
+      darkImage: NewProjDark
     },
     {
-      link: "/studentprojectbuilder4",
+      link: "/studentdashboard/submitproject",
       buttonText: "SUBMIT PROJECT",
       image: SubmitProjLight,
-      darkImage: SubmitProjDark,
+      darkImage: SubmitProjDark
     },
     {
-      link: "/studentprojectbuilder5",
+      link: "/studentdashboard/bonuschallenge",
       buttonText: "BONUS CHALLENGE",
-      image: PrizeLight,
+      image: PrizeLight
     },
     {
-      link: "/studentprojectbuilder6",
+      link: "/studentdashboard/takethequiz",
       buttonText: "TAKE THE QUIZ",
-      image: ListLight,
+      image: ListLight
     },
   ];
 
@@ -124,18 +123,20 @@ export default function SideBar(props) {
     },
   ];
 
-  let ButtonContents = [];
-  let ProfilePicture;
+  const getStudentPicture = () => {
+    fetch(`http://localhost:4000/studentprofile/${studentID}`)
+      .then((res) => res.json())
+      .then((StudentPicture) => {
+        const studentPicture = StudentPicture;
+        setProfilePicture(studentPicture.map(key => key.ProfilePic));
+      });
+  };
 
-  if (props.TeacherVersion) {
-    ButtonContents = TeacherButtonContents;
-    ProfilePicture = TeacherProfilePicture;
-  } else {
-    ButtonContents = StudentButtonContents;
-    ProfilePicture = StudentProfilePicture;
-  }
+  const [studentID, setStudentID] = useState(10);
+  const [profilePicture, setProfilePicture] = useState(props.TeacherVersion? '../images/Teacher Areas/Ellipse 38.png' : '');
+  const [buttonContents, setButtonContents] = useState(props.TeacherVersion? TeacherButtonContents : StudentButtonContents)
 
-  const CreateButtons = ButtonContents.map((ButtonContents) => {
+  const CreateButtons = buttonContents.map((ButtonContents) => {
     if (props.page === ButtonContents.link) {
       return (
         <DashboardButtonExpanded
@@ -159,10 +160,12 @@ export default function SideBar(props) {
     }
   });
 
+  useEffect(() => props.TeacherVersion? null : getStudentPicture(), []);
+
   return (
     <div className={isExpanded ? 'SideBar' : 'SideBar Collapsed'}>
       <div className="ProfilePicture">
-        <img src={ProfilePicture} alt="profile_picture" />
+        <img src={profilePicture} alt="profile_picture" />
       </div>
       <div className="DashboardButtons">{CreateButtons}</div>
       <div className={isExpanded ? 'SidebarCollapseButton' : 'SidebarExpandButton'} onClick={handleToggler}>

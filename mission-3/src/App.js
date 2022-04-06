@@ -1,17 +1,23 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
+
 import Home from "./pages/Home";
-import LoginSignupPage from "./pages/LoginSignupPage";
 import Profile from "./pages/Profile";
-import StudentProjectBuilder from "./pages/StudentProjectBuilder";
-import StudentProjectLibrary from "./pages/StudentsProjectLibrary";
+import StudentDashboard from "./pages/StudentDashboard";
+import StudentProject from "./pages/StudentProject";
 import TeacherDashboardProgressTracker from "./pages/TeacherDashboardProgressTracker";
-import TeacherProjectBuilder from "./pages/TeacherProjectBuilder";
 import TeacherProjectLibrary from "./pages/TeacherProjectLibrary";
 import TeacherDashboardStudentProfiles from "./pages/TeacherDashboardStudentProfiles.js";
 import TeacherDashboardHelpRequests from "./pages/TeacherDashboardHelpRequests.js";
 import TeacherDashboardProjectSubmissions from "./pages/TeacherDashboardProjectSubmissions.js";
+import StudentDashboardInstructions from "./pages/StudentDashboardInstructions";
+import StudentDashboardVideoTutorial from "./pages/StudentDashboardVideoTutorial";
+import StudentDashboardMakeProject from "./pages/StudentDashboardMakeProject";
+import StudentDashboardSubmitProject from "./pages/StudentDashboardSubmitProject";
+import StudentDashboardBonusChallenge from "./pages/StudentDashboardBonusChallenge";
+import StudentDashboardTakeTheQuiz from "./pages/StudentDashboardTakeTheQuiz";
 
 function App() {
   return (
@@ -19,28 +25,53 @@ function App() {
       <div>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/loginSignupPage" element={<LoginSignupPage />} />
-            <Route path="/profile" element={<Profile />} />
-            <Route
-              path="/studentprojectbuilder"
-              element={<StudentProjectBuilder />}
+            <Route 
+              path="/" 
+              element={<Home />} 
+            />
+            <Route 
+              path="/profile" 
+              element={<Profile />}
             />
             <Route
-              path="/studentprojectlibrary"
-              element={<StudentProjectLibrary />}
+              path="/studentproject"
+              element={<StudentProject />}
+            />
+            <Route
+              path="/studentdashboard"
+              element={<StudentDashboard />}
+            />
+            <Route
+              path="/studentdashboard/instructions"
+              element={<StudentDashboardInstructions />}
+            />
+            <Route
+              path="/studentdashboard/videotutorial"
+              element={<StudentDashboardVideoTutorial />}
+            />
+            <Route
+              path="/studentdashboard/makeproject"
+              element={<StudentDashboardMakeProject />}
+            />
+            <Route
+              path="/studentdashboard/submitproject"
+              element={<StudentDashboardSubmitProject />}
+            />
+            <Route
+              path="/studentdashboard/bonuschallenge"
+              element={<StudentDashboardBonusChallenge />}
+            />
+            <Route
+              path="/studentdashboard/takethequiz"
+              element={<StudentDashboardTakeTheQuiz />}
+            />
+            <Route
+              path="/studentdashboard/instructions"
+              element={<StudentDashboardInstructions />}
             />
             <Route
               path="/teacherdashboard/progresstracker"
               element={<TeacherDashboardProgressTracker />}
-            />
-            <Route
-              path="/teacherdashboard"
-              element={<TeacherDashboardProgressTracker />}
-            />
-            <Route
-              path="/teacherprojectbuilder"
-              element={<TeacherProjectBuilder />}
             />
             <Route
               path="/teacherprojectlibrary"

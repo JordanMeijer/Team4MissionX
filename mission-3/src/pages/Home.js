@@ -14,22 +14,16 @@ function Home() {
         <h2>This is the Home page</h2>
       </div>
       <div>
-        <Link to="/loginSignupPage">Log In / Sign Up</Link>
-      </div>
-      <div>
         <Link to="/profile">Profile</Link>
       </div>
       <div>
-        <Link to="/studentprojectbuilder">Student Project Builder</Link>
+        <Link to="/studentproject">Student Projects</Link>
       </div>
       <div>
-        <Link to="/studentprojectlibrary">Student Project Library</Link>
+        <Link to="/studentdashboard">Student Dashboard</Link>
       </div>
       <div>
-        <Link to="/teacherdashboard">Teacher Dashboard</Link>
-      </div>
-      <div>
-        <Link to="/teacherprojectbuilder">Teacher Project Builder</Link>
+        <Link to="/teacherdashboard/progresstracker">Teacher Dashboard</Link>
       </div>
       <div>
         <Link to="/teacherprojectlibrary">Teacher Project Library</Link>

@@ -1,45 +1,59 @@
-import React from "react";
+import React, { useState } from "react";
 import "./HomeHeader.css";
-import StarLogo07_2 from "../images/Home/Star Logo 07-2.png";
-import IconUserCircle from "../images/Student Areas/Icon awesome-user-circle.png";
-import StudentProfile from "../images/Student Areas/Ellipse 38.png";
+import LoginSignupPage from "../pages/LoginSignupPage";
 import Languages from "./Languages";
 
 function HomeHeader(props) {
+  const [modalShow, setModalShow] = useState(false);
+
   const pageProfile = [];
 
   if (props.render_home) {
     pageProfile[0] = (
       <img
         className="header_user_circle"
-        src={IconUserCircle}
+        src='images/Student Areas/Icon awesome-user-circle.png'
         alt="icon_awesome_user_circle"
+        key="image"
+        onClick={() => setModalShow(true)}
       />
     );
     pageProfile[1] = (
-      <div className="header_register_login_element">REGISTER | LOGIN</div>
+      <div 
+        className="header_register_login_element" 
+        key="text"
+        onClick={() => setModalShow(true)}> REGISTER | LOGIN 
+      </div>
     );
   } else {
     pageProfile[0] = (
       <img
         className="header_user_profile"
-        src={StudentProfile}
+        src={props.picture_path}
         alt="student_profile"
+        key="image"
       />
     );
     pageProfile[1] = (
-      <div className="header_register_login_element">RAWIRI FLETCHER</div>
+      <div className="header_register_login_element" key="text">{props.person_name}</div>
     );
   }
 
   return (
     <>
+      <LoginSignupPage modalShow={modalShow} setModalShow={setModalShow} />
       <header className="header_main_style">
         <section>
-          <img src={StarLogo07_2} alt="home_logo" />
+          <a href={`/`} >
+            <img 
+              src='images/Home/Star Logo 07-2.png' 
+              alt="home_logo" />
+          </a>
         </section>
         <section>
-          <div className="header_navbar_content">HOME</div>
+          <a href={`/`} >
+            <div className="header_navbar_content">HOME</div>
+          </a>
           <div className="header_navbar_content">FEATURES</div>
           <div className="header_navbar_content">TEACHERS</div>
         </section>
@@ -48,7 +62,7 @@ function HomeHeader(props) {
             <div className="header_lang_content">LANG</div>
             <Languages className="header_flags" />
           </section>
-          <section>{pageProfile}</section>
+          <section className="header_data">{pageProfile}</section>
         </div>
       </header>
     </>
