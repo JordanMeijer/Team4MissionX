@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,700;1,800;1,900&family=Open+Sans:wght@500;700&display=swap");
+
+.HomeOfferBody {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.HomeOfferH1Tag {
+  margin-top: 20%;
+  text-align: left;
+  font: bold bold bold 42px/11px Nunito;
+  letter-spacing: 0.84px;
+  color: #6C6C6C;
+}
+
+.HomeOfferH3Tag {
+  text-align: left;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  font: normal normal bold 30px/11px Nunito;
+  letter-spacing: 0.6px;
+  color: #6C6C6C;
+}
+
+.HomeOfferPTag {
+  text-align: left;
+  font: bold bold bold 20px/24px Open Sans;
+  letter-spacing: 0.4px;
+  color: #767676;
+}
+
+.HomeOfferLeftSide {
+  margin-left: 252px;
+}
+
+.HomeOfferRightSide {
+  margin-top: 3%;
+  margin-left: 4%;
+}
+
+.HomeOfferCreate{
+  height: 152px;
+  width: 155px;
+  margin-right: 2%;
+  background: transparent radial-gradient(closest-side at 50% 50%, #88DBFF 0%, #42C0F6 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 5px #00000029;
+  border: 1px solid #42C0F6;
+  border-radius: 20px;
+  text-align: center;
+  font: normal normal bold 14px/24px Open Sans;
+  letter-spacing: 0.28px;
+  color: #FFFFFF;
+}
+
+.HomeOfferRightImage {
+  width: 95%;
+}
+
+.HomeOfferLeftButtons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.HomeOfferLeftImage {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.HomeOfferClearCircle{
+  border: 2px solid;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #707070;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  margin-right: 3%;
+}
+
+.HomeOfferFullCircle {
+  background: #707070 0% 0% no-repeat padding-box;
+  border: 2px solid #707070;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  margin-right: 3%;
+}
+
+.HomeOfferRightButtons {
+  margin-left: 40%;
+}
