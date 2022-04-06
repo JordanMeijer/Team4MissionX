@@ -4,8 +4,8 @@
   display: flex;
   flex-direction: column;
   background-color: rgb(67, 192, 246);
+  height: 95vh;
   width: 236px;
-  height: 110vh;
   position: relative;
 }
 
@@ -19,17 +19,24 @@
   width: 100%;
 }
 
-.AccountButtons {
+.AccountButtonsContainer {
   display: flex;
   flex-direction: row;
   margin-top: auto;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
 }
 
-.AccountButtons > img {
-  margin: 10px;
-  height: 12px;
+.AccountButton {
+  display: flex;
+  flex-direction: column;
+}
+
+.AccountButton > img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
 }
 
 .AccountButtonText {
@@ -44,4 +51,70 @@
 .ProfilePicture {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.SidebarCollapseButton {
+  background-color:#b2e4fa ;
+  margin-right: 0;
+  height: 60px;
+  width: 55px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  display: flex;
+}
+
+.SidebarExpandButton {
+  background-color:#b2e4fa ;
+  margin-top: auto;
+  margin-left: 0;
+  height: 60px;
+  width: 55px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+}
+
+.PinkArrowLeft {
+  width: 0px;
+  height: 0px;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #F91CB4;
+  margin: auto;
+}
+
+.PinkArrowRight {
+  width: 0px;
+  height: 0px;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #F91CB4;
+  margin: auto;
+}
+
+
+/* These are the css styling applied when the side bar collapsed button is toggled */
+.SideBar.Collapsed {
+  width: 120px;
+}
+
+.SideBar.Collapsed > .AccountButtonsContainer {
+  flex-direction: column;
+}
+
+.SideBar.Collapsed > .AccountButtonsContainer > .AccountButton > .AccountButtonText {
+  display: none;
+}
+
+.SideBar.Collapsed > .DashboardButtons > a > div > .DashboardButtonIcon {
+  margin: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+  width: 40px;
+  
+}
+
+.SideBar.Collapsed > .DashboardButtons > a > div > .DashboardButtonText {
+  display: none;
 }
