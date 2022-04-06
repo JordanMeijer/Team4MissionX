@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./HomeHeader.css";
+import LoginSignupPage from "../pages/LoginSignupPage";
 import Languages from "./Languages";
 
 function HomeHeader(props) {
+  const [modalShow, setModalShow] = useState(false);
+
   const pageProfile = [];
 
   if (props.render_home) {
@@ -12,10 +15,15 @@ function HomeHeader(props) {
         src='images/Student Areas/Icon awesome-user-circle.png'
         alt="icon_awesome_user_circle"
         key="image"
+        onClick={() => setModalShow(true)}
       />
     );
     pageProfile[1] = (
-      <div className="header_register_login_element" key="text">REGISTER | LOGIN</div>
+      <div 
+        className="header_register_login_element" 
+        key="text"
+        onClick={() => setModalShow(true)}> REGISTER | LOGIN 
+      </div>
     );
   } else {
     pageProfile[0] = (
@@ -33,6 +41,7 @@ function HomeHeader(props) {
 
   return (
     <>
+      <LoginSignupPage modalShow={modalShow} setModalShow={setModalShow} />
       <header className="header_main_style">
         <section>
           <a href={`/`} >
