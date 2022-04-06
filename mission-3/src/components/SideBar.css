@@ -50,7 +50,7 @@
 
 .ProfilePicture {
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .SidebarCollapseButton {
@@ -117,4 +117,8 @@
 
 .SideBar.Collapsed > .DashboardButtons > a > div > .DashboardButtonText {
   display: none;
+}
+
+.SideBar.Collapsed > .DashboardButtons > a > div  {
+  padding-left: 0;
 }
