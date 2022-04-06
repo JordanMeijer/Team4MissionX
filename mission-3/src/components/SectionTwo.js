@@ -11,16 +11,18 @@ function SectionTwo() {
       code.
     </h1>
     <div>
-      <img src={PhotoOne}></img>
-    </div>
-    <div>
-      <img src={PhotoTwo}></img>
-    </div>
-    <div>
-      <img src={PhotoThree}></img>
-    </div>
-    <div>
-      <img src={PhotoFour}></img>
+      <div>
+        <img src={PhotoOne}></img>
+      </div>
+      <div>
+        <img src={PhotoTwo}></img>
+      </div>
+      <div>
+        <img src={PhotoThree}></img>
+      </div>
+      <div>
+        <img src={PhotoFour}></img>
+      </div>
     </div>
   </section>;
 }

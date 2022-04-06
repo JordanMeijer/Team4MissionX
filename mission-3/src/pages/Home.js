@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import HomeHeader from "../components/HomeHeader";
 import HomeHero from "../components/HomeHero";
 import HomeFooter from "../components/HomeFooter";
-import Gallerybox from "../components/GallerySection";
+import SectionTwo from "../components/SectionTwo";
 
 function Home() {
   return (
