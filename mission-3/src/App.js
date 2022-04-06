@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 
 import Home from "./pages/Home";
-import LoginSignupPage from "./pages/LoginSignupPage";
 import Profile from "./pages/Profile";
 import StudentDashboard from "./pages/StudentDashboard";
 import StudentProject from "./pages/StudentProject";
@@ -28,10 +28,6 @@ function App() {
             <Route 
               path="/" 
               element={<Home />} 
-            />
-            <Route 
-              path="/loginSignupPage" 
-              element={<LoginSignupPage />} 
             />
             <Route 
               path="/profile" 

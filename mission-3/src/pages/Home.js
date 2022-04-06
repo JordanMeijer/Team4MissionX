@@ -14,9 +14,6 @@ function Home() {
         <h2>This is the Home page</h2>
       </div>
       <div>
-        <Link to="/loginSignupPage">Log In / Sign Up</Link>
-      </div>
-      <div>
         <Link to="/profile">Profile</Link>
       </div>
       <div>
