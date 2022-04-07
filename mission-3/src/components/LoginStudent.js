@@ -3,33 +3,50 @@ import "../components/LoginPage.css";
 
 function LoginStudent() {
 
-function logInAPI() {
-  const email = document.getElementById("email_address").value;
-  const password = document.getElementById("password").value;
-  
-  if (email === '') {
-    alert(`Email address must be provided`)
-    return;
+  function certifyData(response) {
+    if (response === 'invalid') {
+      alert(`Incorrect password`);
+    } 
+    else if (response === 'not found') {
+      alert(`Email address not found`);
+    }
+    else {
+      alert(`You've successfully logged in`);
+    }
   }
 
-  if (password === '') {
-    alert(`Please type your password`)
-    return;
-  };
+  function logInAPI() {
+    const email = document.getElementById("email_address").value;
+    const password = document.getElementById("password").value;
+  
+    if (email === '') {
+      alert(`Email address must be provided`)
+      return;
+    }
 
-  const requestOptions = {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    //body: JSON.stringify(body),
-  };
+    if (password === '') {
+      alert(`Please type your password`)
+      return;
+    };
 
-  fetch("http://localhost:4000/create_user_teacher", requestOptions)
-    .then((response) => response.text())
-    .then((result) => alert(`You've successfully added a new user`))
-    .catch((error) => console.log("error", error));
-}
+    const body = {
+      "email": email,
+      "password": password
+    };
+
+    const requestOptions = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(body),
+    };
+
+    fetch("http://localhost:4000/student_login", requestOptions)
+      .then((response) => response.text())
+      .then((result) => certifyData(result))
+      .catch((error) => alert("error", error));
+  }
 
   return (
     <div>

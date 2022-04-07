@@ -1,9 +1,8 @@
-import "./Profile.css";
+import "./StudentProfile.css";
 import { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
 import HomeHeader from "../components/HomeHeader";
 
-export default function Profile() {
+export default function StudentProfile() {
   const [studentID, setStudentID] = useState(2);
   const [studentData, setStudentData] = useState([{
     StudentName: 'student',
@@ -63,7 +62,7 @@ export default function Profile() {
           </div>
           <button 
             className="profile_back_button" 
-            onClick={()=> window.location.href="http://localhost:3000"}> BACK TO PROJECTS 
+            onClick={()=> window.location.href="http://localhost:3000/studentdashboard"}> BACK TO PROJECTS 
           </button>
         </div>
       </div>

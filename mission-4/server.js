@@ -38,6 +38,67 @@ app.get("/", (req, res) => {
   );
 });
 
+// API to Login Students /
+app.post('/student_login', (req, res) => {
+  console.log(req.body);
+  const {email, password} = req.body;
+
+  connection.query(
+    `SELECT Password FROM missio20_team4.Student WHERE Email = "${email}";`,
+    (error, result) => {
+      if (error) {
+        console.log("Error", error);
+        res.send("You' got an error ! " + error.code);
+        return;
+      } 
+      else {
+        if (result.length === 0) {
+          res.send('not found');
+          return;
+        }
+        else if((result[0].Password === password)) {
+          res.send('valid');
+          return;
+        }
+        else {
+          res.send('invalid');
+          return;
+        }
+      }
+    }
+  );
+});
+
+// API to Login Teachers /
+app.post('/teacher_login', (req, res) => {
+  const {email, password} = req.body;
+
+  connection.query(
+    `SELECT Password FROM missio20_team4.Teacher WHERE Email = "${email}";`,
+    (error, result) => {
+      if (error) {
+        console.log("Error", error);
+        res.send("You' got an error ! " + error.code);
+        return;
+      } 
+      else {
+        if (result.length === 0) {
+          res.send('not found');
+          return;
+        }
+        else if((result[0].Password === password)) {
+          res.send('valid');
+          return;
+        }
+        else {
+          res.send('invalid');
+          return;
+        }
+      }
+    }
+  );
+});
+
 app.get("/studentprofile/:studentID", (req, res) => {
   console.log(`Received a GET request to /studentprofile/:studentID`);
   const { studentID } = req.params;
@@ -57,9 +118,27 @@ app.get("/studentprofile/:studentID", (req, res) => {
   );
 });
 
+app.get("/teacherprofile/:teacherID", (req, res) => {
+  console.log(`Received a GET request to /teacherprofile/:teacherID`);
+  const { teacherID } = req.params;
+  connection.query(
+    `SELECT * FROM missio20_team4.Teacher WHERE TeacherID=${teacherID}`,
+    (error, result) => {
+      if (error) {
+        console.log("Error", error);
+        res.send("You' got an error ! " + error.code);
+      } else {
+        console.log(result);
+        res.send(result);
+      }
+    }
+  );
+});
+
 app.use("/create_user_student/", studentSignupRouter);
 
 app.use("/create_user_teacher/", teacherSignupRouter);
+
 
 const PORT = process.env.PORT;
 console.log("server running at port", PORT);
