@@ -31,9 +31,13 @@
   font: bold;
   color: white;
   font-family: "Open sans", serif;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .DashboardButtonDark>h3 {
   color: rgb(70, 70, 70);
+}
+
+.DashboardButtonExpandedLink {
+  text-decoration: none;
 }

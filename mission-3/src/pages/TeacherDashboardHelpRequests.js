@@ -1,21 +1,44 @@
 import './TeacherDashboard.css';
 import './TeacherDashboardHelpRequests.css'
 import React from 'react';
+import { useEffect, useState } from 'react';
 import StudentTeacherHeader from '../components/StudentTeacherHeader';
 import SideBar from '../components/SideBar.js'
 import TeacherHelpRequestsCards from '../components/TeacherHelpRequestsCards';
-import StudentProfiles from '../StudentProfiles';
+
 
 
 export default function TeacherDashboardHelpRequests() {
+    const [HelpRequests, setHelpRequests] = useState([{
+        studentname:"student", 
+        studentProfilePicture:"picture", 
+        DateCreated:'yyyy-mm-dd hh-mm-ss', 
+        Done:0,
+        RequestID:0 }])
 
-    // This function pulls the data from StudentProfiles and creates a help request card for each student if HelpRequested = true.
-    const HelpRequestCard = StudentProfiles.map(StudentProfiles => {
-        if (StudentProfiles.helpRequested) {
+    const getHelpRequests = () => {
+        fetch('http://localhost:4000/teacherdashboard/HelpRequests')
+          .then((res) => res.json())
+          .then((HelpRequestsData) => {
+            console.log(HelpRequestsData);
+            const HelpRequests = HelpRequestsData;
+            setHelpRequests(HelpRequests)
+          })
+    }
+      
+    useEffect(() => getHelpRequests(),[])
+
+    const HelpRequestCard = HelpRequests.map(HelpRequests => {
+        if (HelpRequests.Done === 0) 
+        {
             return (
-                <TeacherHelpRequestsCards key={StudentProfiles} studentProfilePicture={StudentProfiles.studentProfilePicture} name={StudentProfiles.name} date={StudentProfiles.dateSubmited} time={StudentProfiles.timeSubmited} />
+                <TeacherHelpRequestsCards 
+                key={HelpRequests.RequestID} 
+                studentProfilePicture={HelpRequests.ProfilePic} 
+                name={HelpRequests.studentname} 
+                dateTime={HelpRequests.DateCreated} />
             )
-        }
+        } return null
     })
     return (
         <div>
@@ -27,7 +50,7 @@ export default function TeacherDashboardHelpRequests() {
 
                 <div className='DashboardContentsParentContainer'>
                     <div className='DashboardContentsChildContainer'>
-                        <h2 className='HelpRequestsText'>HELP REQUESTS</h2>
+                        <h2 className='DashboardTitleText'>HELP REQUESTS</h2>
                         <div className='HelpRequestsButtons'>                          
                                 <h3>REPLY</h3>
                                 <h3>MARK AS DONE</h3>
