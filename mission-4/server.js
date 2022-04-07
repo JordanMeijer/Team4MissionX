@@ -21,11 +21,28 @@ const connection = mysql.createConnection({
   password: process.env.PASSWORD,
 });
 
-app.get("/", (req, res) => {
+app.get("/teacherdashboard/studentprofiles", (req, res) => {
   console.log("Received a GET request to /");
-  // Run the SQL query, when you get a request to /
   connection.query(
-    `SELECT * FROM missio20_team4.Student LIMIT 15;`,
+    `SELECT StudentName, ProfilePic FROM missio20_team4.Student LIMIT 15;`,
+    (error, result) => {
+      if (error) {
+        console.log("Error", error);
+        res.send("You' got an error ! " + error.code);
+      } else {
+        console.log(result);
+        res.send(result);
+      }
+    }
+  );
+});
+
+app.get("/teacherdashboard/helprequests", (req, res) => {
+  console.log("Received a GET request to /");
+  connection.query(
+    `SELECT missio20_team4.HelpRequest.*,missio20_team4.Student.studentname,missio20_team4.Student.ProfilePic
+    FROM missio20_team4.HelpRequest
+    left Join missio20_team4.Student on missio20_team4.HelpRequest.StudentID = missio20_team4.Student.StudentID;`,
     (error, result) => {
       if (error) {
         console.log("Error", error);

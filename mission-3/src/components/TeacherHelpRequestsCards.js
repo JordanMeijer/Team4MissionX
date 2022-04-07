@@ -1,7 +1,13 @@
 import React from 'react';
 import './TeacherHelpRequestCards.css'
 
-function TeacherHelpRequestsCards({ studentProfilePicture, name, time, date }) {
+function TeacherHelpRequestsCards({ studentProfilePicture, name, dateTime }) {
+    console.log(dateTime)
+    let NewDate = new Date(dateTime)
+    console.log(NewDate)
+    let date = NewDate.toDateString()
+    let time = NewDate.toLocaleTimeString()
+
     return (
         <div className='TeacherHelpRequestCardParentContainer'>
             <div className='CheckBox'></div>

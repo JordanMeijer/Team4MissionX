@@ -10,7 +10,7 @@ export default function TeacherDashboardStudentProfiles() {
   const [StudentProfiles, setStudentProfiles] = useState([{name:"name", studentProfilePicture:"picture"}])
 
   const getStudentProfiles = () => {
-    fetch('http://localhost:4000')
+    fetch('http://localhost:4000/teacherdashboard/studentprofiles')
       .then((res) => res.json())
       .then((StudentProfileData) => {
         console.log(StudentProfileData);
@@ -21,17 +21,14 @@ export default function TeacherDashboardStudentProfiles() {
   
   useEffect(() => getStudentProfiles(),[])
 
-    // fetch('http://localhost:5000')
-    //  .then((res) => res.json())
-    //  .then((jsonData) => {
-    //  console.log(jsonData);
-    //  }
-    // getStudentProfiles()
 
 
   const studentProfileCards = StudentProfiles.map(studentProfiles => {
     return (
-      <TeacherDashboardStudentProfileCard key={studentProfiles} studentProfilePicture={studentProfiles.ProfilePic} name={studentProfiles.StudentName}/>
+      <TeacherDashboardStudentProfileCard 
+      key={studentProfiles} 
+      studentProfilePicture={studentProfiles.ProfilePic} 
+      name={studentProfiles.StudentName}/>
     )
   })
   

@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
 .app_star_logo_07_3 {
   align-items: center;
   width: 146px;
   height: 60px;
   margin-left: 30%;
+}
+
+* {
+  font-family: "Open Sans", serif;
 }
