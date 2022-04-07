@@ -36,7 +36,6 @@ export default function SideBar(props) {
   //  Storing locally info that can be reteived so that state is conserved between refreshes and changing pages
   const sideBarCollapsed = localStorage.getItem('sidebar-collapsed');
   const [isExpanded, setIsExpanded] = useState(sideBarCollapsed ? false : true)
-
   const handleToggler = () => {
     if (isExpanded) {
       setIsExpanded(false);
@@ -136,6 +135,8 @@ export default function SideBar(props) {
   const [profilePicture, setProfilePicture] = useState(props.TeacherVersion? '../images/Teacher Areas/Ellipse 38.png' : '');
   const [buttonContents, setButtonContents] = useState(props.TeacherVersion? TeacherButtonContents : StudentButtonContents)
 
+
+  
   const CreateButtons = buttonContents.map((ButtonContents) => {
     if (props.page === ButtonContents.link) {
       return (
@@ -172,18 +173,18 @@ export default function SideBar(props) {
         <div className={isExpanded ? 'PinkArrowLeft' : 'PinkArrowRight'}></div>
       </div>
       <div className="AccountButtonsContainer">
-        <div className="AccountButton">
+        <a href="/profile" className="AccountButton">
           <img src={UserCircle} alt="user_circle_profile" />
           <p className="AccountButtonText">Profile</p>
-        </div>
-        <div className="AccountButton">
+        </a>
+        <a className="AccountButton">
           <img src={Settings} alt="settings_icon" />
           <p className="AccountButtonText">Settings</p>
-        </div>
-        <div className="AccountButton">
+        </a>
+        <a href='/' className="AccountButton">
           <img src={LogOut} alt="logout_icon" />
           <p className="AccountButtonText">Log out</p>
-        </div>
+        </a>
       </div>
     </div>
   );

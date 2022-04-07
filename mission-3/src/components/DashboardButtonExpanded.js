@@ -3,7 +3,7 @@ import "./DashboardButtonExpanded.css";
 
 export default function DashboardButtonExpanded(props) {
   return (
-    <a href={props.link}>
+    <a href={props.link} className='DashboardButtonExpandedLink'>
       <div className={props.className}>
         <img
           src={props.image}
