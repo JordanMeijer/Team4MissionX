@@ -30,7 +30,7 @@ function HomeHeader(props) {
       <img
         className="header_user_profile"
         src={props.picture_path}
-        alt="student_profile"
+        alt="profile"
         key="image"
       />
     );

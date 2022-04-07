@@ -14,7 +14,9 @@ function StudentTeacherHeader (props) {
     <>
       <header className="student_teacher_header">
         <section>
-          <img src={StarLogo07_3} className="app_star_logo_07_3" alt="project-star-logo" />
+          <a href={`/`} >
+            <img src={StarLogo07_3} className="app_star_logo_07_3" alt="project-star-logo" />
+          </a>
         </section>
         <section>
           <ProjectBar render_bar={props.render_project_bar} circles={15} number_to_render={1}/>

@@ -4,7 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 
 import Home from "./pages/Home";
-import Profile from "./pages/Profile";
+import StudentProfile from "./pages/StudentProfile";
+import TeacherProfile from "./pages/TeacherProfile";
 import StudentDashboard from "./pages/StudentDashboard";
 import StudentProject from "./pages/StudentProject";
 import TeacherDashboardProgressTracker from "./pages/TeacherDashboardProgressTracker";
@@ -30,8 +31,12 @@ function App() {
               element={<Home />} 
             />
             <Route 
-              path="/profile" 
-              element={<Profile />}
+              path="/studentprofile" 
+              element={<StudentProfile />}
+            />
+            <Route 
+              path="/teacherprofile" 
+              element={<TeacherProfile />}
             />
             <Route
               path="/studentproject"

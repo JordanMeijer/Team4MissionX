@@ -7,6 +7,22 @@ function SignupTeacher() {
     const email = document.getElementById("email_address").value;
     const password = document.getElementById("password").value;
     const confirm_password = document.getElementById("confirm_password").value;
+
+    if (name === '') {
+      alert(`Name must be provided`)
+      return;
+    }
+
+    if (email === '') {
+      alert(`Email address must be provided`)
+      return;
+    }
+
+    if (confirm_password !== password) {
+      alert(`Your password is not matching`)
+      return;
+    };
+
     const body = {
       name: name,
       email: email,

@@ -71,13 +71,14 @@
 }
 
 .profile_detail_subject {
-  margin-top: 14%;
+  margin-top: 16%;
   font: normal normal bold 30px/30px Nunito;
   letter-spacing: 0.6px;
   color: #A5A5A5;
 }
 
 .profile_detail_data {
+  margin-top: 6%;
   text-align: left;
   font: normal normal normal bold 30px/30px Open Sans;
   letter-spacing: 0.6px;

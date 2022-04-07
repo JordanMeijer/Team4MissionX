@@ -7,7 +7,6 @@
 }
 
 .HomeOfferH1Tag {
-  margin-top: 20%;
   text-align: left;
   font: bold bold bold 42px/11px Nunito;
   letter-spacing: 0.84px;
@@ -31,7 +30,7 @@
 }
 
 .HomeOfferLeftSide {
-  margin-left: 252px;
+  margin-left: 10%;
 }
 
 .HomeOfferRightSide {
