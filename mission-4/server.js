@@ -37,6 +37,22 @@ app.get("/teacherdashboard/studentprofiles", (req, res) => {
   );
 });
 
+app.get("/getpass", (req, res) => {
+  console.log("Received a GET request to /");
+  connection.query(
+    `select Password from missio20_team4.Student where StudentID = 18;`,
+    (error, result) => {
+      if (error) {
+        console.log("Error", error);
+        res.send("You' got an error ! " + error.code);
+      } else {
+        console.log(result);
+        res.send(result);
+      }
+    }
+  );
+});
+
 app.get("/teacherdashboard/helprequests", (req, res) => {
   console.log("Received a GET request to /");
   connection.query(

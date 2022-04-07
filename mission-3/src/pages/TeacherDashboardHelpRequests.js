@@ -29,7 +29,7 @@ export default function TeacherDashboardHelpRequests() {
     useEffect(() => getHelpRequests(),[])
 
     const HelpRequestCard = HelpRequests.map(HelpRequests => {
-        if (HelpRequests.Done == 0) 
+        if (HelpRequests.Done === 0) 
         {
             return (
                 <TeacherHelpRequestsCards 
@@ -38,7 +38,7 @@ export default function TeacherDashboardHelpRequests() {
                 name={HelpRequests.studentname} 
                 dateTime={HelpRequests.DateCreated} />
             )
-        }
+        } return null
     })
     return (
         <div>

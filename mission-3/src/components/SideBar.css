@@ -31,12 +31,14 @@
 .AccountButton {
   display: flex;
   flex-direction: column;
+  text-decoration: none;
 }
 
 .AccountButton > img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
+ 
 }
 
 .AccountButtonText {
@@ -91,6 +93,7 @@
   border-left: 20px solid #F91CB4;
   margin: auto;
 }
+
 
 
 /* These are the css styling applied when the side bar collapsed button is toggled */
