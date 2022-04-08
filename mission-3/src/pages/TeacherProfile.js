@@ -5,7 +5,7 @@ import HomeHeader from "../components/HomeHeader";
 
 export default function StudentProfile() {
   const { state } = useLocation();
-  const [teacherID, setTeacherID] = useState(0);
+  const [teacherID, setTeacherID] = useState(state);
   const [teacherData, setTeacherData] = useState([{
     Name: 'name',
     Email: 'email',
@@ -52,11 +52,11 @@ export default function StudentProfile() {
                 <h3 className="teacherprofile_detail_subject">Email Address</h3>
               </div>
               <div>
-                <h3 className="teacherprofile_detail_subject">{teacherData.map(key => key.School)}</h3>
-                <h3 className="teacherprofile_detail_subject">Beginner</h3>
-                <h3 className="teacherprofile_detail_subject">{teacherData.map(key => key.DateOfBirth)}</h3>
-                <h3 className="teacherprofile_detail_subject">{teacherData.map(key => key.ContactNumber)}</h3>
-                <h3 className="teacherprofile_detail_subject">{teacherData.map(key => key.Email)}</h3>
+                <h3 className="teacherprofile_detail_data">{teacherData.map(key => key.School)}</h3>
+                <h3 className="teacherprofile_detail_data">Beginner</h3>
+                <h3 className="teacherprofile_detail_data">{teacherData.map(key => key.DateOfBirth)}</h3>
+                <h3 className="teacherprofile_detail_data">{teacherData.map(key => key.ContactNumber)}</h3>
+                <h3 className="teacherprofile_detail_data">{teacherData.map(key => key.Email)}</h3>
               </div>
             </div>
           </div>
