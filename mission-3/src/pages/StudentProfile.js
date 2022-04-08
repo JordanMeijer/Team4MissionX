@@ -1,9 +1,11 @@
 import "./StudentProfile.css";
 import { useState, useEffect } from 'react';
+import { useLocation } from "react-router-dom";
 import HomeHeader from "../components/HomeHeader";
 
 export default function StudentProfile() {
-  const [studentID, setStudentID] = useState(2);
+  const { state } = useLocation();
+  const [studentID, setStudentID] = useState(state);
   const [studentData, setStudentData] = useState([{
     StudentName: 'student',
     Email: 'email',

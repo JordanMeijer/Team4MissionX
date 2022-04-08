@@ -1,7 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../components/LoginPage.css";
 
 function LoginStudent() {
+
+  let navigate = useNavigate();
 
   function certifyData(response) {
     if (response === 'invalid') {
@@ -11,7 +14,7 @@ function LoginStudent() {
       alert(`Email address not found`);
     }
     else {
-      alert(`You've successfully logged in`);
+      navigate("/studentprofile", {state: response});
     }
   }
 

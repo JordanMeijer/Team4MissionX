@@ -77,7 +77,7 @@ app.post('/student_login', (req, res) => {
   const {email, password} = req.body;
 
   connection.query(
-    `SELECT Password FROM missio20_team4.Student WHERE Email = "${email}";`,
+    `SELECT Password, StudentID FROM missio20_team4.Student WHERE Email = "${email}";`,
     (error, result) => {
       if (error) {
         console.log("Error", error);
@@ -90,7 +90,8 @@ app.post('/student_login', (req, res) => {
           return;
         }
         else if((result[0].Password === password)) {
-          res.send('valid');
+          const userID = result[0].StudentID;
+          res.send(`${userID}`);
           return;
         }
         else {
@@ -107,7 +108,7 @@ app.post('/teacher_login', (req, res) => {
   const {email, password} = req.body;
 
   connection.query(
-    `SELECT Password FROM missio20_team4.Teacher WHERE Email = "${email}";`,
+    `SELECT Password, TeacherID FROM missio20_team4.Teacher WHERE Email = "${email}";`,
     (error, result) => {
       if (error) {
         console.log("Error", error);
@@ -120,7 +121,8 @@ app.post('/teacher_login', (req, res) => {
           return;
         }
         else if((result[0].Password === password)) {
-          res.send('valid');
+          const userID = result[0].TeacherID;
+          res.send(`${userID}`);
           return;
         }
         else {

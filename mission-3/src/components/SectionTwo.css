@@ -1,24 +1,24 @@
-h1 {
+.sectiontwo_h1 {
     text-align: center;
     margin: 50px;
     color: #6C6C6C;
     font-size: 30px;
 }
 
-.image_box {
+.sectiontwo_image_box {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 200px;
 }
 
-.image {
+.sectiontwo_image {
     position: absolute;
     mix-blend-mode: overlay;
     opacity: 1;
 }
 
-.image_frame {
+.sectiontwo_image_frame {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,46 +31,46 @@ h1 {
     margin-right: 20px;
 }
 
-.image_frame_one {
+.sectiontwo_image_frame_one {
     background-image: url("../images/Home/girl-in-white-long-sleeve-dress-sitting-on-brown-wooden-3913426@2x.png");
     background-size: cover;
 }
 
-.image_one {
+.sectiontwo_image_one {
     position: absolute; 
 }
 
-.image_frame_two {
+.sectiontwo_image_frame_two {
     background-image: url("../images/Home/markus-spiske-AoX_1zm1NOM-unsplash@2x.png");
     background-size: cover;
     border-radius: 20px;
 }
 
-.image_two {
+.sectiontwo_image_two {
     position: absolute;
 }
 
-.image_frame_three {
+.sectiontwo_image_frame_three {
     background-image: url("../images/Home/girl-in-red-dress-playing-a-wooden-blocks-3662667@2x.png");
     background-size: cover;
     border-radius: 20px;
 }
 
-.image_three {
+.sectiontwo_image_three {
     position: absolute; 
 }
 
-.image_frame_four {
+.sectiontwo_image_frame_four {
     background-image: url("../images/Home/annie-spratt-xKJUnFwfz3s-unsplash@2x.png");
     background-size: cover;
     border-radius: 20px;
 }
 
-.image_four {
+.sectiontwo_image_four {
     position: absolute; 
 }
 
-.text {
+.sectiontwo_text {
     font: normal normal 800 30px/20px Nunito;
     letter-spacing: 0.6px;
     text-align: center;
