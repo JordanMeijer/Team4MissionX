@@ -4,6 +4,8 @@ import './StudentProgressCard.css'
 export default function StudentProgressCard({ studentName, projectsCompleted }) {
   const numberOfProjectsStudentProgressCard = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 
+
+  // returns either a green or clear circle based upon if the student has compleated that project or not
   const ProjectEllipse = numberOfProjectsStudentProgressCard.map(numberOfProjectsStudentProgressCard => {
     if (projectsCompleted.includes(numberOfProjectsStudentProgressCard)) {
       return (
