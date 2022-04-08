@@ -3,10 +3,10 @@ import "../components/LoginPage.css";
 
 function SignupTeacher() {
   function signUpAPI() {
-    const name = document.getElementById("full_name").value;
-    const email = document.getElementById("email_address").value;
-    const password = document.getElementById("password").value;
-    const confirm_password = document.getElementById("confirm_password").value;
+    const name = document.getElementById("teacher_full_name").value;
+    const email = document.getElementById("teacher_email_address").value;
+    const password = document.getElementById("teacher_password").value;
+    const confirm_password = document.getElementById("teacher_confirm_password").value;
 
     if (name === '') {
       alert(`Name must be provided`)
@@ -50,28 +50,28 @@ function SignupTeacher() {
         name="create_full_name"
         placeholder="Full Name"
         className="signup_inputs"
-        id="full_name"
+        id="teacher_full_name"
       />
       <input
         type="text"
         name="create_email_address"
         placeholder="Email Address"
         className="signup_inputs"
-        id="email_address"
+        id="teacher_email_address"
       />
       <input
         type="text"
         name="create_password"
         placeholder="Password"
         className="signup_inputs"
-        id="password"
+        id="teacher_password"
       />
       <input
         type="text"
         name="confirm_password"
         placeholder="Confirm Password"
         className="signup_inputs"
-        id="confirm_password"
+        id="teacher_confirm_password"
       />
       <div>
         <button onClick={signUpAPI} className="submit_btn">

@@ -15,30 +15,10 @@ function Home() {
       <HomeHeader render_home={true} />
       <HomeHero />
       <HomeOffer />
-
-      <div>
-        <h2>This is the Home page</h2>
-      </div>
-      <div>
-        <Link to="/studentprofile">Student Profile</Link>
-      </div>
-      <div>
-        <Link to="/studentproject">Student Projects</Link>
-      </div>
-      <div>
-        <Link to="/studentdashboard">Student Dashboard</Link>
-      </div>
-      <div>
-        <Link to="/teacherdashboard/progresstracker">Teacher Dashboard</Link>
-      </div>
-      <div>
-        <Link to="/teacherprojectlibrary">Teacher Project Library</Link>
-      </div>
       <SectionTwo />
       <SlideButtons />
       <SlideThree />
       <HomeBottom />
-
       <HomeFooter />
     </>
   );

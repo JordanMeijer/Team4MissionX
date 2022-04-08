@@ -4,8 +4,8 @@ import "../components/SlideSelectors.css";
 function SlideButtons() {
   return (
     <section>
-      <h1>How our programme helps teachers and students</h1>
-      <div className="button_box">
+      <h1 className='slide_h1'>How our programme helps teachers and students</h1>
+      <div className="slide_button_box">
         <button className="slide_buttons">
           <b>LEARNING PATHWAYS</b>
         </button>

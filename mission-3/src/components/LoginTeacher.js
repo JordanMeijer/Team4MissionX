@@ -1,9 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../components/LoginPage.css";
 
 function LoginTeacher() {
 
-    function certifyData(response) {
+  let navigate = useNavigate();
+
+  function certifyData(response) {
     if (response === 'invalid') {
       alert(`Incorrect password`);
     } 
@@ -11,13 +14,13 @@ function LoginTeacher() {
       alert(`Email address not found`);
     }
     else {
-      alert(`You've successfully logged in`);
+      navigate("/teacherprofile", {state: response});
     }
   }
   
   function logInAPI() {
-    const email = document.getElementById("email_address").value;
-    const password = document.getElementById("password").value;
+    const email = document.getElementById("teacher_email_address").value;
+    const password = document.getElementById("teacher_password").value;
   
     if (email === '') {
       alert(`Email address must be provided`)
@@ -55,14 +58,14 @@ function LoginTeacher() {
         name="Email Address"
         placeholder="Email Address"
         className="login_inputs"
-        id="email_address"
+        id="teacher_email_address"
       />
       <input
         type="text"
         name="Password"
         placeholder="Password"
         className="login_inputs"
-        id="password"
+        id="teacher_password"
       />
       <div>
         <button onClick={logInAPI} className="submit_btn">

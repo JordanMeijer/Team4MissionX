@@ -2,6 +2,11 @@ import React from "react";
 import "../components/LoginPage.css";
 
 function SignupStudent() {
+
+  function redirectPage() {
+    alert(`You've successfully added a new user`);
+  }
+
   function signUpAPI() {
     const name = document.getElementById("full_name").value;
     const email = document.getElementById("email_address").value;
@@ -39,7 +44,7 @@ function SignupStudent() {
 
     fetch("http://localhost:4000/create_user_student", requestOptions)
       .then((response) => response.text())
-      .then((result) => alert(`You've successfully added a new user`))
+      .then((result) => redirectPage())
       .catch((error) => console.log("error", error));
   }
 
