@@ -6,8 +6,8 @@ import SideBar from '../components/SideBar.js'
 import TeacherDashboardStudentProfileCard from '../components/TeacherDashboardStudentProfileCard'
 
 
-export default function TeacherDashboardStudentProfiles() { 
-  const [StudentProfiles, setStudentProfiles] = useState([{name:"name", studentProfilePicture:"picture"}])
+export default function TeacherDashboardStudentProfiles() {
+  const [StudentProfiles, setStudentProfiles] = useState([{ name: "name", studentProfilePicture: "picture" }])
 
   const getStudentProfiles = () => {
     fetch('http://localhost:4000/teacherdashboard/studentprofiles')
@@ -18,31 +18,38 @@ export default function TeacherDashboardStudentProfiles() {
         setStudentProfiles(StudentProfiles)
       })
   }
-  
-  useEffect(() => getStudentProfiles(),[])
+
+  useEffect(() => getStudentProfiles(), [])
 
 
 
   const studentProfileCards = StudentProfiles.map(studentProfiles => {
     return (
-      <TeacherDashboardStudentProfileCard 
-      key={studentProfiles} 
-      studentProfilePicture={studentProfiles.ProfilePic} 
-      name={studentProfiles.StudentName}/>
+      <TeacherDashboardStudentProfileCard
+        key={studentProfiles}
+        studentProfilePicture={studentProfiles.ProfilePic}
+        name={studentProfiles.StudentName} />
     )
   })
-  
+
   return (
     <div>
       <div>
         <StudentTeacherHeader render_project_bar={false} text_middle="Help Centre" />
       </div>
-      <div className='Dashboard'> 
-        <SideBar page="/teacherdashboard/studentprofiles" TeacherVersion={true}/> 
+      <div className='Dashboard'>
+        <SideBar page="/teacherdashboard/studentprofiles" TeacherVersion={true} />
         <div className='DashboardContentsParentContainer'>
           <div className="DashboardContentsChildContainer">
-            <div className="StudentProfilesGrid">
-              {studentProfileCards}
+            <div className='DashboardContents'>
+              <div className="StudentProfilesGrid">
+
+                {studentProfileCards}
+
+              </div>
+              <div className='ScrollBarParent'>
+                <div className='ScrollBarChild'></div>
+              </div>
             </div>
           </div>
         </div>
