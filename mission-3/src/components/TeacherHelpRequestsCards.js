@@ -3,9 +3,15 @@ import './TeacherHelpRequestCards.css'
 
 function TeacherHelpRequestsCards({ studentProfilePicture, name, dateTime }) {
     console.log(dateTime)
+
+    //converting datetime to the standard used in JS
     let NewDate = new Date(dateTime)
     console.log(NewDate)
+
+    // use this to show date month and year
     let date = NewDate.toDateString()
+
+    // We use to show just the hours and mintues                 
     let time = NewDate.toLocaleTimeString()
 
     return (
