@@ -173,7 +173,7 @@ export default function SideBar(props) {
         <div className={isExpanded ? 'PinkArrowLeft' : 'PinkArrowRight'}></div>
       </div>
       <div className="AccountButtonsContainer">
-        <a href="/profile" className="AccountButton">
+        <a href={props.TeacherVersion? '/teacherprofile' : '/profile'} className="AccountButton">
           <img src={UserCircle} alt="user_circle_profile" />
           <p className="AccountButtonText">Profile</p>
         </a>
